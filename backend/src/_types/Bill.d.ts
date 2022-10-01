@@ -1,5 +1,5 @@
-import { Document } from "mongoose";
-import { ObjectId } from "bson";
+import { Document, ObjectId } from "mongoose";
+
 import { BillSignificance } from "../_enums/BillSignificance";
 
 export interface IBill extends Document {
