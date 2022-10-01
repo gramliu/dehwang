@@ -1,1 +1,15 @@
-node_modules
+# dependencies
+.env
+dist/
+db/
+node_modules/
+
+# Output
+build/
+
+# macOS
+.DS_Store
+.python-version
+
+# misc
+npm-debug.log*
