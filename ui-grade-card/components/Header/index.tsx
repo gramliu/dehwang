@@ -10,11 +10,11 @@ export default function Header(): ReactElement {
       <Link href="/" passHref>
         <a>
           <Image src="/gavel.png" alt="Gavel" width={64} height={64} />
+          <Typography variant="h4" className={styles.title}>
+            Pol.Lit
+          </Typography>
         </a>
       </Link>
-      <Typography variant="h4" className={styles.title}>
-        Pol.Lit
-      </Typography>
     </div>
   );
 }

@@ -4,7 +4,6 @@ import Image from "next/future/image";
 import { useRouter } from "next/router";
 import BaseLayout from "../../components/BaseLayout";
 import BillRow from "../../components/BillRow";
-import ChipContainer from "../../components/ChipContainer";
 import Header from "../../components/Header";
 import { Politician } from "../../components/PoliticianRow";
 import styles from "../../styles/Politician.module.scss";
@@ -63,7 +62,11 @@ const Stance: NextPage = () => {
               {billsAuthored} bills authored
             </Typography>
           ) : null}
-          <ChipContainer chips={stances} />
+          <div className={styles.stances}>
+            {stances.map((stance) => (
+              <Chip key={stance} variant="outlined" label={stance} clickable />
+            ))}
+          </div>
         </div>
         <Typography
           variant="h3"

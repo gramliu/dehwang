@@ -1,6 +1,7 @@
 import { Chip, Typography } from "@mui/material";
 import Image from "next/future/image";
 import { ReactElement } from "react";
+import ChipContainer from "../ChipContainer";
 import styles from "./index.module.scss";
 
 export interface Politician {
@@ -36,11 +37,7 @@ export default function PoliticianRow({
           </Typography>
         ) : null}
       </div>
-      <div className={styles.stances}>
-        {stances.map((stance) => (
-          <Chip key={stance} variant="outlined" label={stance} clickable />
-        ))}
-      </div>
+      <ChipContainer chips={stances} />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useState } from "react";
 import BaseLayout from "../components/BaseLayout";
 import BillRow from "../components/BillRow";
+import ChipContainer from "../components/ChipContainer";
 import PoliticianRow from "../components/PoliticianRow";
 import styles from "../styles/Search.module.scss";
 
@@ -37,22 +38,7 @@ const Search: NextPage = () => {
             ),
           }}
         />
-        <div className={styles.chipContainer}>
-          <Chip
-            label="Transparency"
-            variant="outlined"
-            clickable
-            component="a"
-            href="#transparency"
-          />
-          <Chip
-            label="Accountability"
-            variant="outlined"
-            clickable
-            component="a"
-            href="#accountability"
-          />
-        </div>
+        <ChipContainer chips={["Accountability", "Transparency"]} />
         {/* Politicians section */}
         <Typography variant="h3" className={styles.sectionHeader}>
           Politicians
