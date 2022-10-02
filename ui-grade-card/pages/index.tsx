@@ -60,9 +60,6 @@ const Home: NextPage = () => {
             ),
           }}
         />
-        <Typography variant="h4" fontWeight="bold">
-          Trending
-        </Typography>
       </div>
     </BaseLayout>
   );

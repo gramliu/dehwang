@@ -25,13 +25,18 @@ export const getPolitician = async (
         path: "bill",
         populate: {
           path: "stances",
-          model: "Bill",
         },
       });
+
+    const promise = new Promise(async (resolve, reject) => {
+      (politician as any).getStances(resolve);
+    });
+    const stances = await promise;
 
     res.json({
       politician: politician,
       bills: bills,
+      stances,
     });
   } catch (err) {
     if (err.name === "CastError" || err.name === "ValidationError") {

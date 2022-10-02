@@ -3,13 +3,18 @@ import { ReactElement } from "react";
 import styles from "./index.module.scss";
 import clsx from "clsx";
 
+export interface Stance {
+  _id: string;
+  name: string;
+}
+
 interface ChipContainerProps {
-  chips: string[];
+  stances: Stance[];
   centered?: boolean;
 }
 
-export default function ChipContainer({
-  chips,
+export default function StancesContainer({
+  stances,
   centered = false,
 }: ChipContainerProps): ReactElement {
   return (
@@ -19,14 +24,14 @@ export default function ChipContainer({
         centered ? styles.chipCentered : styles.chipLeft
       )}
     >
-      {chips.map((chip, index) => (
+      {stances.map((stance, index) => (
         <Chip
           key={index}
-          label={chip}
+          label={stance.name}
           variant="outlined"
           clickable
           component="a"
-          href={`/stance/${index}`}
+          href={`/stance/${stance._id}`}
         />
       ))}
     </div>
