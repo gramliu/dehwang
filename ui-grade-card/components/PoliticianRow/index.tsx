@@ -45,7 +45,6 @@ export default function PoliticianRow({
             </Typography>
           </a>
         </Link>
-
         <Typography variant="subtitle1">{role}</Typography>
         <Typography variant="subtitle1">{location}</Typography>
         {billsAuthored ? (

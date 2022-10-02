@@ -1,6 +1,7 @@
-import { Card, Chip, Typography } from "@mui/material";
+import { Card, Typography } from "@mui/material";
 import clsx from "clsx";
 import Image from "next/future/image";
+import Link from "next/link";
 import { ReactElement, ReactNode } from "react";
 import ChipContainer from "../ChipContainer";
 import styles from "./index.module.scss";
@@ -65,9 +66,13 @@ export default function BillRow({
         />
       </div>
       <div className={styles.description}>
-        <Typography variant="h5" className={styles.billNum}>
-          {billNum}
-        </Typography>
+        <Link href={`/bill/${id || 1}`}>
+          <a className={styles.nameLink}>
+            <Typography variant="h5" className={styles.billNum}>
+              {billNum}
+            </Typography>
+          </a>
+        </Link>
         <Typography variant="h6">{toTitleCase(title)}</Typography>
         <Typography variant="subtitle1">Filed: {dateFiled}</Typography>
         <Typography variant="subtitle1" fontWeight="bold">
