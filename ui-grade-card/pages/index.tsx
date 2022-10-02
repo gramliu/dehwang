@@ -44,13 +44,11 @@ const Home: NextPage = () => {
           variant="outlined"
           label="Search"
           fullWidth
+          placeholder="Search for a politician, topic, or bill"
           onFocus={() => setFocused(true)}
           onBlur={() => setFocused(false)}
           onChange={(e) => {
             setSearchText(e.target.value);
-          }}
-          onKeyUp={(e) => {
-            // TODO: trigger search
           }}
           InputProps={{
             startAdornment: (
