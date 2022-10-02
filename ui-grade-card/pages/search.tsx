@@ -18,7 +18,7 @@ import styles from "../styles/Search.module.scss";
 
 const Search: NextPage = () => {
   const [focused, setFocused] = useState(false);
-  const [searchText, setSearchText] = useState(null);
+  const [searchText, setSearchText] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [searched, setSearched] = useState(false);
 
@@ -62,10 +62,10 @@ const Search: NextPage = () => {
           onFocus={() => setFocused(true)}
           onBlur={() => setFocused(false)}
           value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
+          onChange={(e) => setSearchText(e.target.value ?? "")}
           onKeyUp={(e) => {
             if (e.key === "Enter") {
-              search(searchText);
+              search(searchText ?? "");
             }
           }}
           InputProps={{
