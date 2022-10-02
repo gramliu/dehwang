@@ -12,21 +12,29 @@ export const getStance = async (req: Request, res: Response): Promise<void> => {
     const bills = await Bill.find({ stances: { $elemMatch: { $eq: id } } });
 
     const billCounts: Record<string, number> = {};
+    const authorRecord: Record<string, any> = {};
     for (const bill of bills) {
-      const authors = await BillAuthorship.find({ bill: bill._id });
-      for (const author of authors) {
-        billCounts[author.author.toString()] =
-          (billCounts[author.author.toString()] || 0) + 1;
+      const authorships = await BillAuthorship.find({
+        bill: bill._id,
+      }).populate("author");
+      for (const authorship of authorships) {
+        const authorId = (authorship.author as any)._id;
+        if (authorRecord[authorId] == null) {
+          authorRecord[authorId] = authorship.author;
+        }
+        billCounts[authorId] = (billCounts[authorId] || 0) + 1;
       }
     }
     const authorRankings = Object.entries(billCounts).sort(
       (a, b) => b[1] - a[1]
     );
 
+    const topAuthors = authorRankings.map((entry) => authorRecord[entry[0]]);
+
     res.json({
       stance,
       bills,
-      authorRankings,
+      topAuthors,
     });
   } catch (err) {
     if (err.name === "CastError" || err.name === "ValidationError") {

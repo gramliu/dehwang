@@ -8,7 +8,8 @@ import styles from "./index.module.scss";
 import { DateTime } from "luxon";
 
 export interface Bill {
-  id: string;
+  _id?: string;
+  id?: string;
   billNum: string;
   title: string;
   dateField: string;
@@ -51,7 +52,7 @@ export default function BillRow({
   className,
   useCard = true,
 }: BillRowProps): ReactElement {
-  const { id, billNum, title, dateField, significance, stances } = bill;
+  const { _id: id, billNum, title, dateField, significance, stances } = bill;
 
   return (
     <ConditionalWrapper

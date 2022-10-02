@@ -1,14 +1,12 @@
-import { Chip, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
+import axios from "axios";
 import type { NextPage } from "next";
 import Image from "next/future/image";
-import { useRouter } from "next/router";
 import BaseLayout from "../../components/BaseLayout";
 import BillRow, { Bill } from "../../components/BillRow";
-import StancesContainer, { Stance } from "../../components/ChipContainer";
+import StancesContainer from "../../components/ChipContainer";
 import Header from "../../components/Header";
-import { Politician } from "../../components/PoliticianRow";
 import styles from "../../styles/Politician.module.scss";
-import axios from "axios";
 
 const PoliticianPage: NextPage = ({ politician, bills, stances }: any) => {
   const { name, picUrl, role, location, billsAuthored } = politician;
