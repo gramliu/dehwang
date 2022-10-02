@@ -45,20 +45,6 @@ export const addBill = async (req: Request, res: Response): Promise<void> => {
     primary,
     secondary,
   } = req.body;
-  console.log({
-    billNum,
-    title,
-    abstract,
-    date,
-    significance,
-    status,
-    tldr,
-    text,
-    sourceUrl,
-    stanceNames,
-    primary,
-    secondary,
-  });
 
   try {
     const dateField = new Date(date);
