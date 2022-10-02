@@ -44,7 +44,7 @@ export const addPolitician = async (
   try {
     const politician = new Politician(body);
     const politicianObject = await politician.save();
-    res.json({ politicianObject });
+    res.json(politicianObject);
   } catch (err) {
     if (err.name === "CastError" || err.name === "ValidationError") {
       console.error(err);
