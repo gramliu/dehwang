@@ -21,18 +21,6 @@ export default async function processOcr() {
       );
       const text = result.fullTextAnnotation.text;
       writeFileSync(`text/${bill}/${fileName}.txt`, text);
-
-      const pageDir = `text/${bill}/${fileName}`;
-      if (!existsSync(pageDir)) {
-        mkdirSync(pageDir);
-      }
-      const pages = result.fullTextAnnotation.pages;
-      for (const page of pages) {
-        for (const block of page.blocks) {
-          block.paragraphs.forEach(paragraph => paragraph.words.forEach(word => word.))
-        }
-      }
-      break;
     }
     break;
   }

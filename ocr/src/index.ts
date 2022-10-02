@@ -6,4 +6,4 @@ import processOcr from "./processOcr";
 // downloadPdfs(20);
 // extractPdfImages();
 // uploadFiles();
-// processOcr();
+processOcr();
