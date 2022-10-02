@@ -1,0 +1,14 @@
+@import "./variables.scss";
+
+.container {
+  width: 60%;
+  margin: 5% auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  color: $theme-color;
+}
