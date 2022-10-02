@@ -9,7 +9,9 @@ export const getStance = async (req: Request, res: Response): Promise<void> => {
 
   try {
     const stance = await Stance.findById(id);
-    const bills = await Bill.find({ stances: { $elemMatch: { $eq: id } } });
+    const bills = await Bill.find({
+      stances: { $elemMatch: { $eq: id } },
+    }).populate("stances");
 
     const billCounts: Record<string, number> = {};
     const authorRecord: Record<string, any> = {};

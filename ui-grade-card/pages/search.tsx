@@ -13,7 +13,7 @@ import styles from "../styles/Search.module.scss";
 
 const Search: NextPage = () => {
   const [focused, setFocused] = useState(false);
-  const [searchText, setSearchText] = useState("");
+  const [searchText, setSearchText] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const [stances, setStances] = useState([]);
@@ -49,6 +49,7 @@ const Search: NextPage = () => {
           variant="outlined"
           label="Search"
           fullWidth
+          placeholder="Search for a politician, topic, or bill"
           onFocus={() => setFocused(true)}
           onBlur={() => setFocused(false)}
           value={searchText}
