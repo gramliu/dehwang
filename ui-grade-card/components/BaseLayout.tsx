@@ -1,13 +1,19 @@
+import { createTheme, ThemeProvider } from "@mui/material";
 import Head from "next/head";
-import { ReactElement, ReactNode } from "react";
+import { ReactElement } from "react";
 
 interface BaseLayoutProps {
-  children?: ReactNode;
+  children?: JSX.Element;
 }
 
 export default function BaseLayout({
   children,
 }: BaseLayoutProps): ReactElement {
+  const theme = createTheme({
+    typography: {
+      fontFamily: ["Albert Sans", "sans-serif"].join(","),
+    },
+  });
   return (
     <div>
       <Head>
@@ -15,7 +21,7 @@ export default function BaseLayout({
         <meta name="description" content="Political Literacy Enhanced" />
         <link rel="icon" href="/gavel.png" />
       </Head>
-      {children}
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </div>
   );
 }
