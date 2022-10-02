@@ -13,4 +13,4 @@ def summarize(text):
         text, truncation=True, padding="longest", return_tensors="pt"
     )
     translated = model.generate(**batch)
-    return tokenizer.batch_decode(translated, skip_special_tokens=True)
+    return tokenizer.batch_decode(translated, skip_special_tokens=True)[0]

@@ -23,6 +23,7 @@ def extended_generate():
     stances = []
 
     for billDir in os.listdir(CLEANED_PATH):
+        print("******************Starting bill******************")
         currDir = os.path.join(CLEANED_PATH, billDir)
         billText = []
         summaries = []
@@ -56,4 +57,4 @@ def generate(filename):
     return {"summary": summarize(text), "stances": generate_stances(text)}
 
 
-print(generate(BILL_PATH))
+extended_generate()
