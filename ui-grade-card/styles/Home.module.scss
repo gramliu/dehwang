@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+.container {
+  width: 60%;
+  margin: 5% auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.title {
+  font-weight: bold;
+  color: $theme-color;
+}

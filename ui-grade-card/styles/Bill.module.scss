@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.container {
+  width: 60%;
+  margin: 1% auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleWrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  align-self: flex-start;
+  margin-top: 1em;
+}

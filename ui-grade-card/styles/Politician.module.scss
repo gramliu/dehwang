@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+.container {
+  width: 60%;
+  margin: 1% auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.stances {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+}
+
+.sectionHeader {
+  align-self: flex-start;
+  margin-top: 1em;
+}
+
+.bills {
+  margin-top: 2em;
+}
+
+.bill {
+  margin-top: 1em;
+}

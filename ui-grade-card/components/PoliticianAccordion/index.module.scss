@@ -1,0 +1,7 @@
+@import "~/styles/variables.scss";
+
+.bills {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
