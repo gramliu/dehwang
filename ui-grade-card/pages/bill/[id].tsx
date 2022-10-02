@@ -1,17 +1,16 @@
 import { Typography } from "@mui/material";
+import axios from "axios";
+import { DateTime } from "luxon";
 import type { NextPage } from "next";
-import { useRouter } from "next/router";
-import { useState } from "react";
 import BaseLayout from "../../components/BaseLayout";
-import { Bill, toTitleCase } from "../../components/BillRow";
+import { toTitleCase } from "../../components/BillRow";
 import StancesContainer from "../../components/ChipContainer";
 import Header from "../../components/Header";
-import styles from "../../styles/Bill.module.scss";
-import axios from "axios";
 import PoliticianRow, { Politician } from "../../components/PoliticianRow";
+import styles from "../../styles/Bill.module.scss";
 
 const BillPage: NextPage = ({ bill, politicians }: any) => {
-  const { billNum, title, dateFiled, significance, stances } = bill;
+  const { billNum, title, dateField, significance, stances, tldr } = bill;
 
   const mapped = politicians.map((politician: any) => ({
     ...politician,
@@ -25,6 +24,8 @@ const BillPage: NextPage = ({ bill, politicians }: any) => {
     (politician: Politician) => politician.authorType === "SECONDARY"
   );
 
+  const summaryLines = tldr.split(/\.\"?/).splice(0, 3);
+
   return (
     <BaseLayout>
       <Header />
@@ -36,11 +37,21 @@ const BillPage: NextPage = ({ bill, politicians }: any) => {
           <div className={styles.titleWrapper}>
             <Typography variant="h5">{toTitleCase(title)}</Typography>
           </div>
-          <Typography variant="subtitle1">Filed: {dateFiled}</Typography>
+          <Typography variant="subtitle1">
+            Filed: {DateTime.fromISO(dateField).toFormat("MMM dd, yyyy")}
+          </Typography>
           <Typography variant="subtitle1" fontWeight="bold">
             {significance}
           </Typography>
           <StancesContainer stances={stances} centered />
+        </div>
+        <Typography variant="h3" className={styles.sectionHeader}>
+          Summary
+        </Typography>
+        <div className={styles.summary}>
+          {summaryLines.map((line: string, idx: number) => (
+            <ul key={idx}>{line}</ul>
+          ))}
         </div>
         <Typography variant="h3" className={styles.sectionHeader}>
           Principal Authors
