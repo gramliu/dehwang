@@ -30,9 +30,12 @@
 .politicians,
 .bills {
   width: 100%;
-  padding-left: 3em;
   display: flex;
   flex-direction: column;
   gap: 1em;
   margin-bottom: 5em;
+}
+
+.politicians {
+  padding-left: 3em;
 }

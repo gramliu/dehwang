@@ -1,23 +1,25 @@
 import SearchIcon from "@mui/icons-material/Search";
-import {
-  Chip,
-  InputAdornment,
-  Stack,
-  TextField,
-  Typography,
-} from "@mui/material";
+import { Chip, InputAdornment, TextField, Typography } from "@mui/material";
 import type { NextPage } from "next";
 import Image from "next/future/image";
+import Link from "next/link";
+import { useState } from "react";
 import BaseLayout from "../components/BaseLayout";
 import BillRow from "../components/BillRow";
 import PoliticianRow from "../components/PoliticianRow";
 import styles from "../styles/Search.module.scss";
 
-const Home: NextPage = () => {
+const Search: NextPage = () => {
+  const [focused, setFocused] = useState(false);
+
   return (
     <BaseLayout>
       <div className={styles.container}>
-        <Image src="/gavel.png" alt="Gavel" width={128} height={128} />
+        <Link href="/" passHref>
+          <a>
+            <Image src="/gavel.png" alt="Gavel" width={128} height={128} />
+          </a>
+        </Link>
         <Typography variant="h1" className={styles.title}>
           Pol.Lit
         </Typography>
@@ -25,6 +27,8 @@ const Home: NextPage = () => {
           variant="outlined"
           label="Search"
           fullWidth
+          onFocus={() => setFocused(true)}
+          onBlur={() => setFocused(false)}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -97,4 +101,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Search;

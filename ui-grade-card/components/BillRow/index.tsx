@@ -1,10 +1,10 @@
 import { Chip, Typography } from "@mui/material";
-import { style } from "@mui/system";
+import clsx from "clsx";
 import Image from "next/future/image";
 import { ReactElement } from "react";
 import styles from "./index.module.scss";
 
-interface Bill {
+export interface Bill {
   id: string;
   billNum: string;
   title: string;
@@ -15,19 +15,23 @@ interface Bill {
 
 interface BillRowProps {
   bill: Bill;
+  className?: string;
 }
 
-function toTitleCase(str) {
-  return str.replace(/\w\S*/g, function (txt) {
+function toTitleCase(str: string) {
+  return str.replace(/\w\S*/g, function (txt: string) {
     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
   });
 }
 
-export default function BillRow({ bill }: BillRowProps): ReactElement {
+export default function BillRow({
+  bill,
+  className,
+}: BillRowProps): ReactElement {
   const { id, billNum, title, dateFiled, significance, stances } = bill;
 
   return (
-    <div className={styles.billRow}>
+    <div className={clsx(styles.billRow, className)}>
       <div className={styles.photo}>
         <Image src="/document.png" width={64} height={64} alt="Document icon" />
       </div>

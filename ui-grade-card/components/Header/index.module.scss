@@ -1,0 +1,14 @@
+@import "~/styles/variables.scss";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3em;
+  margin: 2em;
+}
+
+.title {
+  color: $theme-color;
+  font-weight: bold;
+}

@@ -5,6 +5,8 @@
   display: grid;
   grid-template-columns: 1fr 5fr;
   text-align: left;
+  gap: 1em;
+  padding-left: 3em;
 }
 
 .photo {
@@ -20,7 +22,6 @@
 }
 
 .stances {
-  margin-top: 1em;
   grid-column: 2 / 2;
   grid-row: 2 / 2;
   display: flex;

@@ -3,12 +3,13 @@ import Image from "next/future/image";
 import { ReactElement } from "react";
 import styles from "./index.module.scss";
 
-interface Politician {
+export interface Politician {
   name: string;
   photoUrl: string;
   role: string;
   location: string;
   stances: string[];
+  billsAuthored?: number;
 }
 
 interface PoliticianRowProps {
@@ -18,7 +19,7 @@ interface PoliticianRowProps {
 export default function PoliticianRow({
   politician,
 }: PoliticianRowProps): ReactElement {
-  const { name, photoUrl, role, location, stances } = politician;
+  const { name, photoUrl, role, location, stances, billsAuthored } = politician;
 
   return (
     <div className={styles.politicianRow}>
@@ -29,6 +30,11 @@ export default function PoliticianRow({
         <Typography variant="h5">{name}</Typography>
         <Typography variant="subtitle1">{role}</Typography>
         <Typography variant="subtitle1">{location}</Typography>
+        {billsAuthored ? (
+          <Typography variant="subtitle1" fontWeight="bold">
+            {billsAuthored} bills authored
+          </Typography>
+        ) : null}
       </div>
       <div className={styles.stances}>
         {stances.map((stance) => (

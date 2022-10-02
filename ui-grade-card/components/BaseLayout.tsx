@@ -1,9 +1,9 @@
 import { createTheme, ThemeProvider } from "@mui/material";
 import Head from "next/head";
-import { ReactElement } from "react";
+import { ReactElement, ReactNode } from "react";
 
 interface BaseLayoutProps {
-  children?: JSX.Element;
+  children?: ReactNode;
 }
 
 export default function BaseLayout({
