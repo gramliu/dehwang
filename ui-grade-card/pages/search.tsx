@@ -1,17 +1,38 @@
 import SearchIcon from "@mui/icons-material/Search";
-import { Chip, InputAdornment, TextField, Typography } from "@mui/material";
+import { InputAdornment, TextField, Typography } from "@mui/material";
+import axios from "axios";
 import type { NextPage } from "next";
 import Image from "next/future/image";
 import Link from "next/link";
 import { useState } from "react";
 import BaseLayout from "../components/BaseLayout";
 import BillRow from "../components/BillRow";
-import ChipContainer from "../components/ChipContainer";
+import StancesContainer from "../components/ChipContainer";
 import PoliticianRow from "../components/PoliticianRow";
 import styles from "../styles/Search.module.scss";
 
 const Search: NextPage = () => {
   const [focused, setFocused] = useState(false);
+  const [searchText, setSearchText] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const [stances, setStances] = useState([]);
+  const [politicians, setPoliticians] = useState([]);
+  const [bills, setBills] = useState([]);
+
+  async function search(query: string) {
+    setLoading(true);
+    const result = await axios.get(`${process.env.BACKEND_URL}/search`, {
+      params: { query },
+    });
+    const { bills, politicians, stances } = result.data;
+    const mappedBills = bills.map((entry: any) => entry.bill);
+    setBills(mappedBills);
+    setPoliticians(politicians);
+    setStances(stances);
+
+    setLoading(false);
+  }
 
   return (
     <BaseLayout>
@@ -30,6 +51,13 @@ const Search: NextPage = () => {
           fullWidth
           onFocus={() => setFocused(true)}
           onBlur={() => setFocused(false)}
+          value={searchText}
+          onChange={(e) => setSearchText(e.target.value)}
+          onKeyUp={(e) => {
+            if (e.key === "Enter") {
+              search(searchText);
+            }
+          }}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -38,50 +66,34 @@ const Search: NextPage = () => {
             ),
           }}
         />
-        <ChipContainer chips={["Accountability", "Transparency"]} />
+        {stances.length > 0 ? <StancesContainer stances={stances} /> : null}
         {/* Politicians section */}
-        <Typography variant="h3" className={styles.sectionHeader}>
-          Politicians
-        </Typography>
-        <div className={styles.politicians}>
-          <PoliticianRow
-            politician={{
-              name: "Hon. Abante, Bienvenido Jr. M.",
-              photoUrl:
-                "https://hrep-website.s3.ap-southeast-1.amazonaws.com/members/19th/abante.jpg",
-              role: "District Representative",
-              location: "Manila, 6th District",
-              stances: ["human rights", "local government", "education"],
-            }}
-          />
-          <PoliticianRow
-            politician={{
-              name: "Hon. Abante, Bienvenido Jr. M.",
-              photoUrl:
-                "https://hrep-website.s3.ap-southeast-1.amazonaws.com/members/19th/abante.jpg",
-              role: "District Representative",
-              location: "Manila, 6th District",
-              stances: ["human rights", "local government", "education"],
-            }}
-          />
-        </div>
+        {politicians.length > 0 ? (
+          <>
+            <Typography variant="h3" className={styles.sectionHeader}>
+              Politicians
+            </Typography>
+            <div className={styles.politicians}>
+              {politicians.map((politician, idx) => (
+                <PoliticianRow key={idx} politician={politician} />
+              ))}
+            </div>
+          </>
+        ) : null}
+
         {/* Bills section */}
-        <Typography variant="h3" className={styles.sectionHeader}>
-          Bills
-        </Typography>
-        <div className={styles.bills}>
-          <BillRow
-            bill={{
-              id: "",
-              billNum: "HB00001",
-              title:
-                "AN ACT PROVIDING FOR GOVERNMENT FINANCIAL INSTITUTIONS UNIFIED INITIATIVES TO DISTRESSED ENTERPRISES FOR ECONOMIC RECOVERY (GUIDE)",
-              dateFiled: "2022-06-30",
-              significance: "National",
-              stances: ["economy recovery", "MSMEs"],
-            }}
-          />
-        </div>
+        {bills.length > 0 ? (
+          <>
+            <Typography variant="h3" className={styles.sectionHeader}>
+              Bills
+            </Typography>
+            <div className={styles.bills}>
+              {bills.map((bill, idx) => (
+                <BillRow key={idx} bill={bill} />
+              ))}
+            </div>
+          </>
+        ) : null}
       </div>
     </BaseLayout>
   );

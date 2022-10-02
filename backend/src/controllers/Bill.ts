@@ -11,7 +11,7 @@ export const getBill = async (req: Request, res: Response): Promise<void> => {
   const { id } = req.params;
 
   try {
-    const bill = await Bill.findById(id);
+    const bill = await (await Bill.findById(id)).populate("stances");
     const politicians = await BillAuthorship.find({ bill: id }).populate(
       "author"
     );

@@ -26,7 +26,7 @@ const Stance: NextPage = () => {
           <PoliticianAccordion
             politician={{
               name: "Hon. Abante, Bienvenido Jr. M.",
-              photoUrl:
+              picUrl:
                 "https://hrep-website.s3.ap-southeast-1.amazonaws.com/members/19th/abante.jpg",
               role: "District Representative",
               location: "Manila, 6th District",
@@ -39,7 +39,7 @@ const Stance: NextPage = () => {
                 billNum: "HB00001",
                 title:
                   "AN ACT PROVIDING FOR GOVERNMENT FINANCIAL INSTITUTIONS UNIFIED INITIATIVES TO DISTRESSED ENTERPRISES FOR ECONOMIC RECOVERY (GUIDE)",
-                dateFiled: "2022-06-30",
+                dateField: "2022-06-30",
                 significance: "National",
                 stances: ["economy recovery", "MSMEs"],
               },
@@ -48,7 +48,7 @@ const Stance: NextPage = () => {
                 billNum: "HB00002",
                 title:
                   "AN ACT PROVIDING FOR GOVERNMENT FINANCIAL INSTITUTIONS UNIFIED INITIATIVES TO DISTRESSED ENTERPRISES FOR ECONOMIC RECOVERY (GUIDE)",
-                dateFiled: "2022-06-30",
+                dateField: "2022-06-30",
                 significance: "National",
                 stances: ["economy recovery", "MSMEs"],
               },
@@ -57,7 +57,7 @@ const Stance: NextPage = () => {
           <PoliticianAccordion
             politician={{
               name: "Hon. Abante, Bienvenido Jr. M.",
-              photoUrl:
+              picUrl:
                 "https://hrep-website.s3.ap-southeast-1.amazonaws.com/members/19th/abante.jpg",
               role: "District Representative",
               location: "Manila, 6th District",
@@ -70,7 +70,7 @@ const Stance: NextPage = () => {
                 billNum: "HB00001",
                 title:
                   "AN ACT PROVIDING FOR GOVERNMENT FINANCIAL INSTITUTIONS UNIFIED INITIATIVES TO DISTRESSED ENTERPRISES FOR ECONOMIC RECOVERY (GUIDE)",
-                dateFiled: "2022-06-30",
+                dateField: "2022-06-30",
                 significance: "National",
                 stances: ["economy recovery", "MSMEs"],
               },
@@ -79,7 +79,7 @@ const Stance: NextPage = () => {
                 billNum: "HB00002",
                 title:
                   "AN ACT PROVIDING FOR GOVERNMENT FINANCIAL INSTITUTIONS UNIFIED INITIATIVES TO DISTRESSED ENTERPRISES FOR ECONOMIC RECOVERY (GUIDE)",
-                dateFiled: "2022-06-30",
+                dateField: "2022-06-30",
                 significance: "National",
                 stances: ["economy recovery", "MSMEs"],
               },

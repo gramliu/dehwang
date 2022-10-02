@@ -19,3 +19,10 @@
   align-self: flex-start;
   margin-top: 1em;
 }
+
+.authors {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}

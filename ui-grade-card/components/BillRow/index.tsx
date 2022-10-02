@@ -3,16 +3,17 @@ import clsx from "clsx";
 import Image from "next/future/image";
 import Link from "next/link";
 import { ReactElement, ReactNode } from "react";
-import ChipContainer from "../ChipContainer";
+import StancesContainer, { Stance } from "../ChipContainer";
 import styles from "./index.module.scss";
+import { DateTime } from "luxon";
 
 export interface Bill {
   id: string;
   billNum: string;
   title: string;
-  dateFiled: string;
+  dateField: string;
   significance: string;
-  stances: string[];
+  stances: Stance[];
 }
 
 interface BillRowProps {
@@ -50,7 +51,7 @@ export default function BillRow({
   className,
   useCard = true,
 }: BillRowProps): ReactElement {
-  const { id, billNum, title, dateFiled, significance, stances } = bill;
+  const { id, billNum, title, dateField, significance, stances } = bill;
 
   return (
     <ConditionalWrapper
@@ -74,12 +75,14 @@ export default function BillRow({
           </a>
         </Link>
         <Typography variant="h6">{toTitleCase(title)}</Typography>
-        <Typography variant="subtitle1">Filed: {dateFiled}</Typography>
+        <Typography variant="subtitle1">
+          Filed: {DateTime.fromISO(dateField).toFormat("MMM dd, yyyy")}
+        </Typography>
         <Typography variant="subtitle1" fontWeight="bold">
           {significance}
         </Typography>
       </div>
-      <ChipContainer chips={stances} />
+      <StancesContainer stances={stances} />
     </ConditionalWrapper>
   );
 }

@@ -1,10 +1,8 @@
-import express from "express";
-import router from "./routes";
+import cors from "cors";
 import dotenv from "dotenv";
+import express from "express";
 import mongoose from "mongoose";
-import Bill from "./models/Bill";
-import Politician from "./models/Politician";
-import Stance from "./models/Stance";
+import router from "./routes";
 
 dotenv.config();
 
@@ -21,6 +19,7 @@ mongoose.connect(MONGODB_URI, {
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 app.use("/", router);
 
 app.listen(PORT, () => console.log(`Running on port ${PORT}`));

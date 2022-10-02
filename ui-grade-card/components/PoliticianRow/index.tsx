@@ -3,17 +3,19 @@ import Image from "next/future/image";
 import Link from "next/link";
 import { ReactElement } from "react";
 import { ConditionalWrapper } from "../BillRow";
-import ChipContainer from "../ChipContainer";
+import StancesContainer from "../ChipContainer";
 import styles from "./index.module.scss";
 
 export interface Politician {
+  _id?: string;
   id?: string;
   name: string;
-  photoUrl: string;
+  picUrl: string;
   role: string;
   location: string;
-  stances: string[];
+  stances?: Stance[];
   billsAuthored?: number;
+  authorType?: "PRINCIPAL" | "SECONDARY";
 }
 
 interface PoliticianRowProps {
@@ -25,15 +27,22 @@ export default function PoliticianRow({
   politician,
   useCard = true,
 }: PoliticianRowProps): ReactElement {
-  const { id, name, photoUrl, role, location, stances, billsAuthored } =
-    politician;
+  const {
+    _id: id,
+    name,
+    picUrl,
+    role,
+    location,
+    stances,
+    billsAuthored,
+  } = politician;
 
   return (
     <ConditionalWrapper useCard={useCard} className={styles.politicianRow}>
       <div className={styles.photo}>
         <Link href={`/politician/${id ?? 1}`}>
           <a>
-            <Image src={photoUrl} alt={name} height={140} width={100} />
+            <Image src={picUrl} alt={name} height={140} width={100} />
           </a>
         </Link>
       </div>
@@ -53,7 +62,7 @@ export default function PoliticianRow({
           </Typography>
         ) : null}
       </div>
-      <ChipContainer chips={stances} />
+      {stances != null ? <StancesContainer stances={stances} /> : null}
     </ConditionalWrapper>
   );
 }
