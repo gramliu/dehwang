@@ -26,7 +26,7 @@ def extended_generate():
     # stances = []
 
     for billDir in os.listdir(CLEANED_PATH):
-        print("******************Starting bill******************")
+        print("\n\n******************Starting bill******************\n\n")
         currDir = os.path.join(CLEANED_PATH, billDir)
         billText = []
         summaries = []
