@@ -1,9 +1,11 @@
+import { ObjectId } from "bson";
 import { Request, Response } from "express";
+import { Schema } from "mongoose";
 import Bill from "../models/Bill";
 import BillAuthorship from "../models/BillAuthorship";
 import Stance from "../models/Stance";
-import { ObjectId } from "bson";
 import { bad, error } from "../util/error";
+import { AuthorType } from "../_types/BillAuthorship";
 
 export const getBill = async (req: Request, res: Response): Promise<void> => {
   const { id } = req.params;
@@ -40,7 +42,23 @@ export const addBill = async (req: Request, res: Response): Promise<void> => {
     text,
     sourceUrl,
     stanceNames,
+    primary,
+    secondary,
   } = req.body;
+  console.log({
+    billNum,
+    title,
+    abstract,
+    date,
+    significance,
+    status,
+    tldr,
+    text,
+    sourceUrl,
+    stanceNames,
+    primary,
+    secondary,
+  });
 
   try {
     const dateField = new Date(date);
@@ -69,11 +87,14 @@ export const addBill = async (req: Request, res: Response): Promise<void> => {
       stances,
     });
     const savedBill = await bill.save();
+    await generateAuthorships(savedBill._id, primary, secondary);
+
     res.json({
       bill: savedBill,
     });
   } catch (err) {
     if (err.name === "CastError" || err.name === "ValidationError") {
+      console.error(err);
       return bad(res);
     } else {
       console.error(err);
@@ -81,3 +102,28 @@ export const addBill = async (req: Request, res: Response): Promise<void> => {
     }
   }
 };
+
+async function generateAuthorships(
+  billId: Schema.Types.ObjectId,
+  primary: string[],
+  secondary: string[]
+) {
+  const promises = [];
+  for (const id of primary) {
+    const authorship = new BillAuthorship({
+      bill: billId,
+      author: id,
+      authorType: AuthorType.PRINCIPAL,
+    });
+    promises.push(authorship.save());
+  }
+  for (const id of secondary) {
+    const authorship = new BillAuthorship({
+      bill: billId,
+      author: id,
+      authorType: AuthorType.SECONDARY,
+    });
+    promises.push(authorship.save());
+  }
+  await Promise.all(promises);
+}

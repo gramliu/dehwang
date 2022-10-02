@@ -2,7 +2,7 @@ const axios = require("axios");
 const { readFileSync, createReadStream } = require("fs");
 const csv = require("csv-parser");
 
-const BASE_URL = "https://dehwang-onutplb72a-uc.a.run.app";
+const BASE_URL = "http://localhost:3000";
 
 const results = [];
 createReadStream("dump.txt")
@@ -31,9 +31,8 @@ createReadStream("dump.txt")
       if (location != null && location.length != 0) {
         body["location"] = location;
       }
-      console.log(JSON.stringify(body));
-      // const promise = axios.post(BASE_URL + "/politician", body);
-      // promises.push(promise);
+      const promise = axios.post(BASE_URL + "/politician", body);
+      promises.push(promise);
       break;
     }
     await Promise.all(promises);

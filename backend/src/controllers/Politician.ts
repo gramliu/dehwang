@@ -3,6 +3,14 @@ import BillAuthorship from "../models/BillAuthorship";
 import Politician from "../models/Politician";
 import { bad, error } from "../util/error";
 
+export const getPoliticians = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  const politicians = await Politician.find({});
+  res.json(politicians);
+};
+
 export const getPolitician = async (
   req: Request,
   res: Response
