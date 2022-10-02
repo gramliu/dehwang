@@ -1,5 +1,10 @@
 import SearchIcon from "@mui/icons-material/Search";
-import { InputAdornment, TextField, Typography } from "@mui/material";
+import {
+  CircularProgress,
+  InputAdornment,
+  TextField,
+  Typography,
+} from "@mui/material";
 import axios from "axios";
 import type { NextPage } from "next";
 import Image from "next/future/image";
@@ -15,13 +20,17 @@ const Search: NextPage = () => {
   const [focused, setFocused] = useState(false);
   const [searchText, setSearchText] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [searched, setSearched] = useState(false);
 
   const [stances, setStances] = useState([]);
   const [politicians, setPoliticians] = useState([]);
   const [bills, setBills] = useState([]);
 
+  const totalLength = stances.length + politicians.length + bills.length;
+
   async function search(query: string) {
     setLoading(true);
+    setSearched(true);
     const result = await axios.get(`${process.env.BACKEND_URL}/search`, {
       params: { query },
     });
@@ -68,6 +77,12 @@ const Search: NextPage = () => {
           }}
         />
         {stances.length > 0 ? <StancesContainer stances={stances} /> : null}
+
+        {loading ? <CircularProgress /> : null}
+
+        {!loading && totalLength === 0 && searched ? (
+          <Typography variant="h5">No results found!</Typography>
+        ) : null}
         {/* Politicians section */}
         {politicians.length > 0 ? (
           <>
