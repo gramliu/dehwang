@@ -1,0 +1,18 @@
+infrastructures and designs, taking into consideration the inventory of existing
+C. Assist and provide technical expertise to government agencies in the development of
+guidelines in the enforcement and administration of laws, standards, rules, and
+d. Assess, initiate, review and support ICT research and development programs of the
+e. Prescribe, in accordance with applicable civil service laws and rules, the creation of
+ICT-related government positions and corresponding compensation rates aligned
+with the personnel needs of a digitalized government, as well as the qualifications,
+standards, duties, and functions essential to the effective development and operation
+of government ICT infrastructures and systems.
+SEC. 7. DICT to Act as the Primary Implementing Body. - The DICT shall be the
+primary implementing body and principal administrator of this Act. All ICT projects in the
+Philippines shall be done in accordance with the National ICT Development Agenda. For this
+purpose, the DICT shall establish measures to implement policies under this Act and ensure that
+all ICT projects in the Philippines, whether national or local are harmonized with the overall ICT
+plans and in compliance with applicable standards. Accordingly, the DICT shall be responsible
+a. Adopting a national policy and process that would facilitate the entry and adoption of
+b. Ensuring the quality, security, reliability, and interoperability of all ICT infrastructure and
+services in accordance with international or industrial standards, specifications, and best

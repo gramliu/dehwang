@@ -1,0 +1,29 @@
+(e) Protect the public interest as it is affected by its ability to access data networks;
+(f) Establish a strong and independent regulatory body and system to ensure and enhance fair
+(g) Protect and promote the internet as an open platform enabling consumer choice, freedom
+of expression, end-user control, competition and the freedom to innovate without permission, and
+6 thereby encouraging the development of advanced telecommunications capabilities and the removal
+(h) Encourage infrastructure sharing and co-location in order to promote network investment,
+eliminate the uneconomic duplication of infrastructure facilities, and strengthen competition; and
+(1) Ensure efficient and transparent management of the radio frequency spectrum, especially
+those utilized in the delivery of data transmission services.
+(a) Basic telephone service refers to the local exchange telephone service for residence and business
+(b) Cellular Mobile Telephone Service (CMTS) refers to the wide area mobile radio telephone system
+with its own switch, base stations and transmission facilities capable of providing high capacity mobile
+(c) Content refers to, among others, texts, images, audios, videos, and animations that are carried
+(d) Core or Backbone Network refers to the main line including international connection, that ties
+networks, delivers routes to exchange information among various subnetworks, connects regional
+distribution networks and, in some instances, provides connectivity to other peer networks;
+(e) Data transmission refers to the process of sending digital or digitized analog signal over a
+communication medium to one or more computing networks, communication or electronic devices.
+It enables the transfer and communication of devices in a point-to-point, point-to-multipoint and
+multipoint-to-multipoint environments. The term data transmission includes the provision of Voice
+over Internet Protocol (VoIP) services but does not include the provision of basic telephone services;
+(f) Data transmission industry participant refers to any person, firm, partnership or corporation,
+government or private, engaged in the provision of data transmission services to the public. This
+includes public telecommunications entities (PTFs) that offer data transmission services as defined
+under Republic Act No.7925, otherwise known as the "Public Telecommunications Policy Act of the
+(g) International gateway or landing refers to a segment of data transmission that consists of any
+facility that provides an interface to send and receive data traffic between one country's domestic
+(h) Last mile refers to the segment of data transmission network that connects end users;
+(1) Middle mile refers to the segment of data transmission network that links the last mile network

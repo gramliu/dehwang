@@ -1,0 +1,20 @@
+SEC. 29. Integration with Existing Public Feedback Mechanisms. - All existing
+public feedback mechanisms for similar purposes established and/or maintained by agencies,
+offices, and instrumentalities, and local government units, shall be fully integrated with the
+Center. For this purpose and in accordance with the objectives of this Act, the Center may enter
+into such arrangements as are necessary for the interconnection, interoperability, and integration
+of the public feedback mechanisms.
+SEC. 30. Integration with the Internal Government Network and Database. - The
+Center, including its sub-operations units, and its operations shall be fully integrated with the
+internal government network and database for real time updating of data and information.
+SEC. 31. Minimum Operating Standards. The Center, including its sub-operational
+a. Communications channels. The Center shall provide communications channels which
+5. Other emerging communications media which can reasonably be used to fulfill
+b. Operating hours. The Center shall operate, through any of its communications channels,
+twenty-four (24) hours a day, seven (7) days a week, including national holidays and days
+in which work is suspended for whatever reason, for which purpose the Center may
+Process flow. A citizen's concern received through any of the communications channels
+shall immediately be encoded onto the Philippine Information Database and referred,
+directly or indirectly, in real time, to the concerned agency, office, or instrumentality for
+appropriate action through the internal government network. The complainant shall be
+given advice or feedback on the status of the concern until its resolution;

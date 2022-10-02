@@ -1,0 +1,20 @@
+Access to and use of the resources, information, and data on the IGN shall be limited to
+15 the government and its duly authorized officers and agents, in accordance with all relevant laws,
+16 rules, and regulations on data and information privacy and the pertinent rules on confidentiality
+of government information.
+b. It shall include direct and easily identifiable links to the relevant and applicable portals
+for the delivery of public services.
+Any person who shall knowingly commit an act which results to the compromise of the
+20 security and integrity of the IGN and all networks interconnected to and interoperable with it to
+21 the detriment of the government and the public shall incur criminal liability in accordance with
+the provisions of applicable and/or relevant penal laws.
+SEC. 40. Data and Information Security. - All resources, information, or data stored
+on or transmitted through the IGN and all networks interconnected to and interoperable with it,
+the Philippine Information Database, the Public Service Directory, the portals, and websites shall
+be kept secure and free from interference or unauthorized access that can hamper or otherwise
+compromise the integrity of the information and communication technology assets.
+25 offices, and instrumentalities of the national and local government under this Act shall be
+a. Providing information security protections commensurate with the risk and magnitude of
+the harm resulting from unauthorized access, use, disclosure, disruption, modification, or
+destruction of information collected or maintained by or on behalf of the agency; and
+information systems used or operated by an agency or by a contractor of an agency or

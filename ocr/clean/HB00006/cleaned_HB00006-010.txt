@@ -1,0 +1,33 @@
+The DICT and the NTC, in coordination with relevant government agencies, shall also ensure
+the disaster resiliency and ease of recovery and restoration of passive infrastructure, such as towers,
+3 poles, and utility corridors, from the effects of disasters by strictly enforcing compliance with
+internationally-accepted engineering standards and best practices, and relevant engineering codes and
+codes of practice.
+The DICT and the NTC shall maintain an updated database of data transmission
+7 infrastructure, including passive infrastructure used to support data transmission. The database, to be
+updated annually, shall include the exact location, ownership, technical specifications, and other
+relevant information about the facility.
+(a) Refusal to Plug and Play. - Any data transmission industry participant, insofar as such
+person is so engaged, shall not refuse access to infrastructure to any other data transmission industry
+participant, except for failure to pay open market fees for the access to the service.
+Data transmission industry participants shall not impede the end-user's right to access and
+distribute information and content, use and provide applications and services and use terminal
+equipment of their choice, regardless of the end user's or provider's location or the location, origin or
+destination of the information, content, application or service via their data transmission service.
+Agreements between data transmission providers of data services and end users on commercial
+and technical conditions and the characteristics of data access services such as price, data volume or
+speed, and any commercial practices conducted by providers of internet access services shall not limit
+the exercise of the rights of end users laid down in the preceding paragraph;
+(b) Paid Prioritization. A data transmission industry participant shall not engage in paid
+prioritization for monetary or other consideration except when allowed by the NIC after such
+participant demonstrates that the practice will provide significant public interest benefit and will not
+disadvantage content and applications that are not prioritized or harm the open nature of the internet;
+(c) Throttling. - A data transmission industry participant shall treat all traffic equally when
+providing data access services without discrimination, restriction or interference, regardless of the
+sender and receiver, the content accessed or distributed, the applications or services used or provided,
+or the terminal equipment used.
+It shall be prohibited for a data transmission industry participant to hinder or slow down services
+or applications or access to specific sites in the internet except where (1) access to such sites, services
+or applications are prohibited by law; (2) it is necessary to preserve the integrity and security of the
+network and service of the provider or the equipment of the end user: Provided, That if the breach of
+integrity or security is caused by the equipment of the end user, the provider has to notify the end user
