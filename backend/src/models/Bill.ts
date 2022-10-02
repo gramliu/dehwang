@@ -19,4 +19,6 @@ const Bill: Schema<IBill> = new Schema({
   stances: { type: [Schema.Types.ObjectId], ref: "Stance", required: true },
 });
 
+Bill.index({ title: "text", text: "text", tldr: "text" });
+
 export default model<IBill>("Bill", Bill, "bills");
