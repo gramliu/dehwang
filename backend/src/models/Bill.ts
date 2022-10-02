@@ -3,8 +3,8 @@ import { IBill } from "../_types/Bill";
 import { BillSignificance } from "../_enums/BillSignificance";
 
 const Bill: Schema<IBill> = new Schema({
-  billNum: { type: String, required: true },
-  title: { type: String, required: true },
+  billNum: { type: String, required: true, text: true },
+  title: { type: String, required: true, text: true },
   abstract: { type: String },
   dateField: { type: Schema.Types.Date },
   significance: {
@@ -13,12 +13,10 @@ const Bill: Schema<IBill> = new Schema({
     default: BillSignificance.NATIONAL,
   },
   status: { type: String },
-  tldr: { type: String },
-  text: { type: String },
+  tldr: { type: String, text: true },
+  text: { type: String, text: true },
   sourceUrl: { type: String },
   stances: { type: [Schema.Types.ObjectId], ref: "Stance", required: true },
 });
-
-Bill.index({ title: "text", text: "text", tldr: "text" });
 
 export default model<IBill>("Bill", Bill, "bills");

@@ -18,26 +18,44 @@ interface BillResult {
 }
 
 export const search = async (req: Request, res: Response): Promise<void> => {
-  const { query } = req.params;
+  const { query } = req.query as { query: string };
 
   try {
-    const billsPipeline = searchBillsPipeline(query);
-    const politiciansPipeline = searchPoliticiansPipeline(query);
-    const stancesPipeline = searchStancesPipeline(query);
+    const billPaths = ["title", "text", "tldr"];
+    const politicianPaths = ["name", "role", "location"];
+    const stancePaths = ["name", "topic"];
 
-    const bills = await Bill.aggregate(billsPipeline);
-    const politicians = await Politician.aggregate(politiciansPipeline);
-    const stances = await Stance.aggregate(stancesPipeline);
+    const bills = await Bill.aggregate([
+      {
+        $search: {
+          text: { path: billPaths, query, fuzzy: {} },
+        },
+      },
+    ]);
+    const politicians = await Politician.aggregate([
+      {
+        $search: {
+          text: { path: politicianPaths, query, fuzzy: {} },
+        },
+      },
+    ]);
+    const stances = await Stance.aggregate([
+      {
+        $search: {
+          text: { query, fuzzy: {}, path: stancePaths },
+        },
+      },
+    ]);
 
     const billResults = [];
     for (const bill of bills) {
-      const authors = BillAuthorship.find({ bill: bill._id }).populate(
+      const authors = await BillAuthorship.find({ bill: bill._id }).populate(
         "author"
       );
       billResults.push({ bill, authors });
     }
 
-    res.json({ billResults, politicians, stances });
+    res.json({ bills: billResults, politicians, stances });
   } catch (err) {
     if (err.name === "CastError" || err.name === "ValidationError") {
       return bad(res);

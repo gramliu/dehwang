@@ -4,6 +4,6 @@ import { asyncCatch } from "../util/asyncCatch";
 
 const router: Router = express.Router();
 
-router.get("/:query", asyncCatch(search));
+router.get("/", asyncCatch(search));
 
 export default router;

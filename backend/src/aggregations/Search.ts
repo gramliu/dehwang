@@ -18,9 +18,6 @@ export const searchBillsPipeline = (query?: string): any[] => {
         ],
       },
     },
-    {
-      $project: {},
-    },
   ];
 };
 
@@ -44,9 +41,6 @@ export const searchPoliticiansPipeline = (query?: string): any[] => {
         ],
       },
     },
-    {
-      $project: {},
-    },
   ];
 };
 
@@ -69,9 +63,6 @@ export const searchStancesPipeline = (query?: string): any[] => {
           },
         ],
       },
-    },
-    {
-      $project: {},
     },
   ];
 };
