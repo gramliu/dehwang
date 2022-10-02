@@ -14,7 +14,11 @@ def generate_stances(text):
     candidates = count.get_feature_names()
 
     # manual adjustment to avoid "filipinx(s)" showing up in every stance
-    candidates = [candidate for candidate in candidates if "filipin" not in candidate]
+    candidates = [
+        candidate
+        for candidate in candidates
+        if "filipin" not in candidate and "philip" not in candidate
+    ]
 
     doc_embedding = _model.encode([text])
     candidate_embeddings = _model.encode(candidates)
