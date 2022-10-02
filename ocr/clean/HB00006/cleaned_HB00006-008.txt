@@ -1,0 +1,31 @@
+Broadband, whichever is higher, for mobile broadband and for fixed wireless/broadband access;
+(b) Prescribe performance standards after public consultation and hearings within six (6)
+(c) Regularly upgrade performance standards imposed on the data transmission industry to
+established in regional data network performance indices and aligned with international best practices.
+Such standards shall take into account speed, packet loss, jitter, and latency;
+(d) Regularly review performance standards at least once a year and publish new performance
+standards at least thirty (30) days before they take effect. The publication of the results of the
+performance measurements shall be done in an open data format and made accessible to the general
+(e) Any person, or the NTC itself, may, motu proprio, file a petition to penalize any data
+transmission industry participant for failure to deliver service according to the NTC's published
+performance standard and to require rectification of such noncompliance; and
+(f) Measure the performance of the data industry participants quarterly and publish the results
+of its assessment in its website.
+(a) Publish and make available in print and online formats all aspects of spectrum use
+information, including the National Radio Frequency Allocation Table (NRFAT), indicating therein
+the purpose or use to which each frequency band is allocated, and, for frequency bands allocated for
+public use, the persons and/or entities to whom each particular frequency is assigned. The NRFAT
+and updated radio spectrum use information shall be made available on the NTC's website and to any
+(b) Promulgate rules requiring all data transmission industry participants to file an annual report
+and include therein a fair and accurate statement regarding their market prices and their services. The
+annual report shall include all costs and charges relevant to the data transmission network segment
+where the participants operate. The rates shall be made available online, in print, and in any other
+viable venue to the public. Any person can file a complaint pertaining to these rates within thirty (30)
+days of posting. Each player at each segment shall submit a copy of their tates to the NTC and the
+PCC. The rates shall be published, including a historical record, in a consolidated manner. The data
+transmission industry participants shall keep a publicly accessible archive of their rates.
+SEC. 10. Fair Competition. The PCC and the NTC shall ensure that the principles and
+policies enshrined under the Philippine Competition Act are strictly adhered to in the data
+transmission industry. The PCC and the NTC shall ensure that all industry players observe fair,
+reasonable, and nondiscriminatory treatment in all their dealings, and that barriers to entry are
+eliminated to make the industry highly competitive. To this end, within thirty (30) days from the

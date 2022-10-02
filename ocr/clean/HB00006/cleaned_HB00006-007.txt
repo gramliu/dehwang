@@ -1,0 +1,33 @@
+and shall not assign, or allow joint use of radio spectrum in a manner that establishes, promotes or
+2 perpetuates the dominance of PTEs. Any entity who believes that any one or more of the NTC's
+3 decisions for the assignment of radio spectrum, whether past or present, which will promote the
+4 dominance of any entity and hinder competition, may file a complaint before the PCC to determine
+the dominance of a data transmission industry participant and deal with anti-competitive conduct in
+6 accordance with its mandate under Republic Act No.10667, otherwise known as the "Philippine
+(d) The NTC shall promptly act on applications of data transmission industry participants for
+permits to import equipment. Any application for a permit to import equipment that is not acted on
+(e) If the NTC finds, on its own initiative or upon complaint, that any right, license or radio
+spectrum assignment to any data transmission industry participant or PTE is not being used, or is not
+being maximized by the user thereof, or that the grantee has violated the provisions of this Act, it may,
+motu proprio or upon petition by any person, subject to due process, recall the radio spectrum
+assignment of the data transmission industry participant or PTL. The NTC shall, where required and
+appropriate, work with the data transmission industry participant or PTE concerned to take
+appropriate measures to minimize the impact of such recall on active users of services utilizing the
+recalled spectrum. The foregoing notwithstanding, no frequency shall be recalled within eighteen (18)
+months of the awarding of a provisional authority or license or registration; and
+(f) The NTC shall ensure that the allocation, reallocation, assignment, reassignment,
+reclassification, joint use or co-use, and recall of spectrum does not result in the concentration of
+spectrum resources which promote, establish, or perpetuate the significant market power of PTEs or
+of only a limited number of participants. In instances where the resulting assignment of spectrum for
+mobile and point-to-multipoint networks will give an assignee or entities it controls, jointly or singly,
+or under common control, either by virtue of that request or in combination with other previous
+requests by that party or its affiliates, fifteen percent (15%) or above of assignable spectrum in the
+same band, the party requesting for an assignment of spectrum or a joint use of spectrum shall be
+required to serve notice to the PCC and secure a no-objection notice from the PCC. The PCC shall
+issue a no-objection notice within thirty (30) working days upon its receipt of pertinent information
+necessary for the review and issuance of the notice: Provided, That the PCC may once extend such
+period for an additional fifteen (15) working days upon their notification of the NTC and the
+concerned party or parties to a spectrum allocation, reallocation, assignment, reassignment,
+reclassification, joint use or co-use, and recall.
+(a) Mandate that, within one (1) year from the effectivity of this Act, all last mile providers shall
+provide a minimum download speed of 2 megabits per second or as mandated by the National

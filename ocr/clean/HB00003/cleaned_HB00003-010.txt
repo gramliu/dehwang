@@ -1,0 +1,24 @@
+SEC. 17. Access To and Use of the Database. The database shall be accessible,
+through digital platforms such as intranet and internet, to all agencies, offices, and
+instrumentalities of the government for purposes consistent with legitimate and valid public
+purposes, subject to the Data Privacy Act (Republic Act 10173).
+All government agencies, offices, and instrumentalities with access to the database shall
+maintain a record of all the instances when, where, and how such agency, office, or
+instrumentality, or its duly authorized representatives, had accessed any information or data
+stored on the database and the purposes of such access, including the identity of the actual
+person or persons gaining access to the said database.
+Notwithstanding the provisions of this Act, access to and use of the resources,
+information, and data on the database shall be in accordance with all relevant domestic and
+international laws, rules, and regulations on data and information privacy and the pertinent rules
+on confidentiality of government information.
+Philippine Identification System, including its existing and planned mechanisms for collecting,
+storing, and accessing data and information, shall be fully integrated with the database, in
+accordance with existing laws, rules, and regulations.
+shall establish and maintain measures to ensure that information stored on the database shall
+automatically and in real time be updated across the entire government network, regardless of
+when and where the change in such data or information was first made or submitted, with the
+end view that an update made at any access point in the government network shall automatically
+be reflected and accessible across all access points in real time.
+exchange protocol between and among agencies and private sector which shall ensure legitimacy
+of access to data, security of information, and compliance with applicable domestic and
+international laws on data privacy.

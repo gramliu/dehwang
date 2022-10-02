@@ -1,0 +1,27 @@
+(1) Open access refers to the system of allowing the use of data transmission
+distribution systems and associated facilities subject to fair, reasonable, and
+(k) Paid prioritization refers to the management of a data transmission network to directly or
+indirectly favor some traffic over other traffic, through the use of techniques such as traffic shaping,
+7 prioritization, resource reservation, zero-rating, or other forms of preferential traffic management,
+either in exchange for consideration (monetary or otherwise) from a third party, or to benefit an
+(1) Voice over Internet Protocol (VoIP) service refers to the provision of voice communication using
+(m) Passive infrastructure collectively refer to telecommunication towers, poles, cable entrances,
+ducts, utility corridors, and any other non-electronic infrastructure and facilities, either existing or to
+be deployed in the future, that may be used to support data transmission.
+SEC. 4. Scope. This Act applies to all persons who participate in the data transmission
+industry. Any person or entity whose business deals substantially with the transmission of data,
+including VoIP service provider, internet service providers (ISPs), and data center service providers,
+shall be governed by the provisions of this Act. PTEs that are principally engaged in the provision of
+basic telephone services, such as an international carrier, interexchange carrier, local exchange
+operator, and mobile radio services provider, as defined in Republic Act No. 7925, and which also
+provide data transmission services, shall likewise be subject to the provisions of this Act with respect
+to the data transmission services they provide and the interconnection to their networks that they
+extend to data transmission industry participants.
+SEC. 5. Registration and Certification. All segments of the data transmission network
+shall be competitive and open. Notwithstanding the provisions of this Act or any other law, the
+following registration and certification shall apply to data transmission:
+(a) All data transmission industry participants shall be required to register with the National
+Telecommunications Commission (NTC). The NTC shall promulgate a speedy and expeditious
+for registration and shall, in coordination with the Department of Information
+and Communications Technology (DICT) for policy and standard-setting in the Information and
+35 Communications Technology (ICT) sector, and Philippine Competition Commission (PCC) for the

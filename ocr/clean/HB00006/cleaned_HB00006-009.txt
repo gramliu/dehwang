@@ -1,0 +1,34 @@
+1 effectivity of this Act, the PCC and the NTC shall enter into an agreement to foster and develop
+2 interagency cooperation mechanisms, including information-sharing tools, that will guide them in the
+3 performance of their respective mandates, and in the promotion of fair competition in the data
+transmission industry.
+SEC. 11. Technological Neutrality. The NTC shall ensure that the provisions of this Act
+apply, mutatis mutandis, to future technologies in data transmission.
+SEC. 12. Infrastructure Sharing and Co-location. - The DICT and the NTC shall
+promulgate policies, rules, and regulations to ensure that passive infrastructure, whether existing or
+built in the future, necessary or capable of supporting data transmission networks or services are:
+(a) made mandatory for open access and made available for co-location and co-use by the
+owner of network facilities, equipment, and infrastructure on an open, fair, and
+12 nondiscriminatory basis to any access seeker's network facilities, in any segment, subject to the
+13 technical feasibility of the access seeker's request and the network facility and infrastructure owner's
+standard published offer terms, conditions, and rates: Provided, That the provision of access to
+government-owned and operated facilities and support infrastructure to access seekers for the
+purpose of offering data transmission services shall be mandatory, unless special circumstances, such
+(b) built not only in the city centers, but most especially in the remote, unserved, and
+underserved areas in order to extend data transmission services by both the existing and new players
+(c) as far as possible, deployed together with roadworks, pipe-laying, and other infrastructure
+(d) proliferated in the most cost-efficient and timely manner through various means, including,
+encouraging the operation of independent entities that build and operate towers, dark fiber, and utility
+corridors, among other passive infrastructure that help facilitate data transmission network
+deployment.
+The DICT shall coordinate and issue a policy with other relevant government agencies upon
+consultation with stakeholders to implement this provision. For purposes of data transmission, the
+NTC shall, in case of a dispute arising from an infrastructure sharing agreement: (1) mediate between
+a data transmission industry participant and an infrastructure owner, and (2) serve as the primary
+enforcer of this provision.
+The DICT and the NTC shall promulgate policies, rules, and regulations to ensure that
+buildings, condominiums, villages, towns, and subdivisions are all built with facilities, such as cable
+entrances, ducts, and risers, that allow nondiscriminatory access to multiple data transmission industry
+players in order for them to provide service. They shall also promulgate policies, rules, and guidelines
+that will ensure a level-playing field and price nondiscrimination among data transmission industry
+participants and network facility and infrastructure owners.

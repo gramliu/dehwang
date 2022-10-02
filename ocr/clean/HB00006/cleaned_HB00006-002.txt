@@ -1,0 +1,12 @@
+Be it enacted by the Senate and House of Representatives of the Philippines in Congress assembled:
+SEC. 2. Declaration of Policy. - It is the policy of the State to narrow the digital divide in
+the country by encouraging the development of data transmission infrastructure and removing any
+barrier to competition in data transmission services. Moreover, the State shall implement measures to
+require data transmission service providers to adhere to telecommunications standards suitable to the
+needs and aspirations of the nation and ensure that internet users enjoy the best quality of data
+(a) Promote the construction and development of reliable, affordable, open and accessible data
+networks that transmit information at speed and quality comparable to the best in the world;
+(b) Create an entrepreneurial ecosystem where persons who wish to engage in the data
+transmission industry can compete openly and freely in the spirit of fair competition and permission-
+(c) Encourage investments in the digital infrastructure development in the country;
+(d) Adopt and ensure open access in the regulation of the data transmission industry;

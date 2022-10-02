@@ -1,0 +1,23 @@
+lack access to the internet; and pursue alternate modes of delivery that make government
+information and services more accessible to individuals who do not own computers or lack
+access to the internet or other platforms and channels.
+SEC. 10. Establishment of the Integrated Government Network. - The DICT shall
+establish an integrated, interconnected, and interoperable internal government network, to be
+known as the "Integrated Government Network" (IGN), which shall act as the primary means
+for the sharing and communication of resources, information, and data through and on digital
+and electronic platforms across all of the government. The IGN shall also act as the
+government's primary and focal information management tool and communications network.
+SEC. 11. Scope and Coverage of the IGN. - The IGN shall cover all branches,
+agencies, instrumentalities, and offices of the national and local government, including
+government-owned and controlled corporations.
+Government Networks. All internal networks already established and maintained by any
+government agency, office, or instrumentality, including local governments, shall upon the
+effectivity of this Act, enact measures to establish interconnection to and interoperability with
+the IGN.
+SEC. 13. Internal Records Management Information System. The government
+shall establish, maintain, and support a records management system for the systematic, efficient,
+and cost-effective management of all government and public documents and records. All paper-
+based documents and records shall be digitized, migrated to, and managed through this system.
+The government shall establish a framework to allow efficient interoperability among
+agencies, offices, and instrumentalities of the national and local government when using
+electronic signatures, including processing of digital signatures.

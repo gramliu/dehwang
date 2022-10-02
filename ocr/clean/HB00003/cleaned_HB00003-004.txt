@@ -1,0 +1,17 @@
+to bring about efficient, responsive, ethical, accountable and transparent government
+SEC. 5. Responsibilities of the Heads of Government Agencies. - The head of each
+26 agency, office, and instrumentality of the national and local government shall be responsible for:
+b. "Workflow" refers to the sequence of industrial, administrative, or other processes
+"Intranet" refers to a secure and private enterprise network that shares data or
+e. "ICT assets" - refers any data, device, equipment, infrastructure, system, or component
+thereof, or property, owned or possessed by the DICT in accordance with its mandate,
+utilized to ensure or support the proper and efficient operation and implementation of
+f. "ICT plan" - refers to the sum or set of goals, measures, strategies, agenda, and
+programs for the implementation of ICT programs and projects and the use of
+information and communications technology, including digital platforms, to deliver
+public services or otherwise perform governmental functions.
+a. Complying with the requirements of this Act, including related standards for all ICT
+infrastructure, systems, equipment, designs, and all other technology, which shall be
+promulgated by the Department of Information and Communications Technology;
+b. Complying with the standards and protocols for cybersecurity, resiliency, privacy, and
+confidentiality, which shall also be promulgated by the Department of Information and
