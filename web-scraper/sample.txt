@@ -1,0 +1,97 @@
+<table width="auto" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="3">House Bill/Resolution NO. <b>HB00001</b></td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      FULL TITLE : AN ACT PROVIDING FOR GOVERNMENT FINANCIAL INSTITUTIONS
+      UNIFIED INITIATIVES TO DISTRESSED ENTERPRISES FOR ECONOMIC RECOVERY
+      (GUIDE)
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      ABSTRACT : Seeks to strengthen the capacity of Land Bank of the Phils. and
+      the Development Bank of the Phils. to provide the needed assistance to
+      micro, small, and medium enterprises (MSMEs), and other strategically
+      important companies; Proposes to mandate that these GFIs expand their
+      credit and rediscounting facilities to affected MSMEs in the agriculture,
+      infrastructure, manufacturing, and service industries; Aims to create a
+      special holding company to be a major player in the financial and capital
+      markets by providing aid to strategically important companies with
+      solvency/liquidity issues brought about by the COVID-19 pandemic and
+      mandating LBP and DBP to maintain at least majority ownership over such
+      SHC until they have recovered their investment.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      PRINCIPAL AUTHOR/S :
+      <b
+        >ROMUALDEZ, FERDINAND MARTIN G., ROMUALDEZ, YEDDA MARIE K., MARCOS,
+        FERDINAND ALEXANDER A., ACIDRE, JUDE A.</b
+      >
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">DATE FILED : 2022-06-30</td>
+  </tr>
+  <tr>
+    <td colspan="3">SIGNIFICANCE: NATIONAL</td>
+  </tr>
+  <tr>
+    <td colspan="3">CO-AUTHORS (Journal Entries) :</td>
+  </tr>
+  <tr>
+    <td>1. Palma (000 2022-08-08)</td>
+    <td>2. Romualdo (000 2022-09-06)</td>
+  </tr>
+  <tr>
+    <td>3. Suarez (D.) (000 2022-09-07)</td>
+    <td>4. Yap (C.) (000 2022-09-15)</td>
+  </tr>
+  <tr>
+    <td>5. Tan (K.) (000 2022-09-21)</td>
+    <td>6. Ongchuan (000 2022-09-26)</td>
+  </tr>
+  <tr>
+    <td>7. Acharon (000 2022-09-26)</td>
+    <td>8. Zamora (M.) (000 2022-09-26)</td>
+  </tr>
+  <tr>
+    <td>9. Rivera (000 2022-09-26)</td>
+    <td>10. Mariño (000 2022-09-26)</td>
+  </tr>
+  <tr>
+    <td>11. Tan-Tambut (000 2022-09-26)</td>
+    <td>12. Adiong (000 2022-09-26)</td>
+  </tr>
+  <tr>
+    <td>13. Flores (000 2022-09-26)</td>
+    <td>14. Mercado-Revilla (000 2022-09-26)</td>
+  </tr>
+  <tr>
+    <td>15. Atayde (000 2022-09-26)</td>
+    <td>16. Sakaluran (000 2022-09-26)</td>
+  </tr>
+  <tr>
+    <td>17. Cari (000 2022-09-26)</td>
+    <td>18. Vargas (000 2022-09-26)</td>
+  </tr>
+  <tr>
+    <td>19. Revilla (R.) (000 2022-09-26)</td>
+    <td>20. Tanjuatco (000 2022-09-26)</td>
+  </tr>
+  <tr>
+    <td>21. Mastura (000 2022-09-26)</td>
+  </tr>
+  <tr>
+    <td colspan="3"><b>ACTIONS TAKEN BY THE COMMITTEE ON RULES</b></td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      REFERRAL TO THE COMMITTEE ON BANKS AND FINANCIAL INTERMEDIARIES ON
+      2022-07-26
+    </td>
+  </tr>
+</table>
