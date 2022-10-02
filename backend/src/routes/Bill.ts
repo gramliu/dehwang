@@ -1,6 +1,6 @@
-import { getBill, addBill } from "controllers/Bill";
+import { getBill, addBill } from "../controllers/Bill";
 import express, { Router } from "express";
-import { asyncCatch } from "util/asyncCatch";
+import { asyncCatch } from "../util/asyncCatch";
 
 const router: Router = express.Router();
 

@@ -1,6 +1,6 @@
-import { getPolitician, addPolitician } from "controllers/Politician";
+import { getPolitician, addPolitician } from "../controllers/Politician";
 import express, { Router } from "express";
-import { asyncCatch } from "util/asyncCatch";
+import { asyncCatch } from "../util/asyncCatch";
 
 const router: Router = express.Router();
 

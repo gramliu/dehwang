@@ -1,6 +1,6 @@
-import { search } from "controllers/Search";
+import { search } from "../controllers/Search";
 import express, { Router } from "express";
-import { asyncCatch } from "util/asyncCatch";
+import { asyncCatch } from "../util/asyncCatch";
 
 const router: Router = express.Router();
 

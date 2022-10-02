@@ -1,6 +1,6 @@
-import { getRoot, getPlay, putEarnings } from "controllers/Game";
+import { getRoot, getPlay, putEarnings } from "../controllers/Game";
 import express, { Router } from "express";
-import { asyncCatch } from "util/asyncCatch";
+import { asyncCatch } from "../util/asyncCatch";
 
 const router: Router = express.Router();
 

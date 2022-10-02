@@ -1,5 +1,5 @@
 import { model, Schema } from "mongoose";
-import { IPolitican } from "_types/Politician";
+import { IPolitican } from "../_types/Politician";
 
 const Politician: Schema<IPolitican> = new Schema({
   name: { type: String, required: true },

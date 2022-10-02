@@ -1,6 +1,6 @@
 import { model, Schema } from "mongoose";
 import { IBill } from "../_types/Bill";
-import { BillSignificance } from "_enums/BillSignificance";
+import { BillSignificance } from "../_enums/BillSignificance";
 
 const Bill: Schema<IBill> = new Schema({
   billNum: { type: String, required: true },

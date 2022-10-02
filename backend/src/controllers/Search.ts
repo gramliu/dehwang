@@ -5,12 +5,12 @@ import {
   searchPoliticiansPipeline,
   searchStancesPipeline,
 } from "../aggregations/Search";
-import Bill from "models/Bill";
-import Politician from "models/Politician";
-import Stance from "models/Stance";
-import { IBill } from "_types/Bill";
-import { IPolitican } from "_types/Politician";
-import BillAuthorship from "models/BillAuthorship";
+import Bill from "../models/Bill";
+import Politician from "../models/Politician";
+import Stance from "../models/Stance";
+import { IBill } from "../_types/Bill";
+import { IPolitican } from "../_types/Politician";
+import BillAuthorship from "../models/BillAuthorship";
 
 interface BillResult {
   bill: IBill;

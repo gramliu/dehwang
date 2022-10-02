@@ -1,6 +1,6 @@
-import { getStance } from "controllers/Stance";
+import { getStance } from "../controllers/Stance";
 import express, { Router } from "express";
-import { asyncCatch } from "util/asyncCatch";
+import { asyncCatch } from "../util/asyncCatch";
 
 const router: Router = express.Router();
 

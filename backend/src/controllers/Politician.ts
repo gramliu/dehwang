@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import BillAuthorship from "models/BillAuthorship";
-import Politician from "models/Politician";
+import BillAuthorship from "../models/BillAuthorship";
+import Politician from "../models/Politician";
 import { bad, error } from "../util/error";
 
 export const getPolitician = async (

@@ -1,11 +1,10 @@
 FROM node:14-alpine
 
 # Setup app directory
-WORKDIR /home/node/app/backend
-COPY package*.json ./
-USER node
+WORKDIR /usr/src/app
+COPY backend/package*.json ./
 RUN npm install
-COPY --chown=node:node . .
+COPY ./backend .
 
 RUN npm run build
 ENTRYPOINT ["npm", "start", "--"]

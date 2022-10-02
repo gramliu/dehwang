@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import Bill from "models/Bill";
-import BillAuthorship from "models/BillAuthorship";
-import Stance from "models/Stance";
+import Bill from "../models/Bill";
+import BillAuthorship from "../models/BillAuthorship";
+import Stance from "../models/Stance";
 import { bad, error } from "../util/error";
 
 export const getStance = async (req: Request, res: Response): Promise<void> => {

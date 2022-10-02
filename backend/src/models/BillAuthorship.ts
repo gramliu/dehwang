@@ -1,5 +1,5 @@
 import { model, Schema } from "mongoose";
-import { IBillAuthorship, AuthorType } from "_types/BillAuthorship";
+import { IBillAuthorship, AuthorType } from "../_types/BillAuthorship";
 
 const BillAuthorship: Schema<IBillAuthorship> = new Schema({
   bill: { type: Schema.Types.ObjectId, ref: "Bill", required: true },

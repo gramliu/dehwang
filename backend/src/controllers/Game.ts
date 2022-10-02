@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import Bill from "models/Bill";
-import BillAuthorship from "models/BillAuthorship";
+import Bill from "../models/Bill";
+import BillAuthorship from "../models/BillAuthorship";
 import { bad, error } from "../util/error";
 
 type Confirmation = void;

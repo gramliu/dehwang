@@ -6,9 +6,7 @@
     "noImplicitAny": true,
     "moduleResolution": "node",
     "sourceMap": true,
-    "outDir": "dist",
-    "rootDir": "./src",
-    "baseUrl": "./src",
+    "outDir": "dist"
   },
   "include": ["./src/**/*"]
 }

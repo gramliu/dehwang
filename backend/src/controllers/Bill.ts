@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import Bill from "models/Bill";
-import BillAuthorship from "models/BillAuthorship";
-import Stance from "models/Stance";
+import Bill from "../models/Bill";
+import BillAuthorship from "../models/BillAuthorship";
+import Stance from "../models/Stance";
 import { ObjectId } from "bson";
 import { bad, error } from "../util/error";
 
