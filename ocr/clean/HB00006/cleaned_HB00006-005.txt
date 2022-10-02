@@ -1,0 +1,30 @@
+2 industry participants that will encourage the widest possible participation of as many industry players
+will offer data transmission services in all segments of the network and to
+end users in different parts of the country. The qualification requirements for data transmission
+industry participants shall also take national security concerns into consideration particularly for
+facilities that interface directly with another country's domestic network.
+(b) Those who will operate an international cable landing station shall secure a legislative
+franchise. Those who will operate a nationwide backbone network shall secure
+the NTC and submit its proposed route or rollout plan, as well as the manner of construction of the
+backbone network, subject to the approval of the NTC.
+All other industry participants shall not be required to secure a legislative franchise or a
+certificate of public convenience and necessity (CPCN) but must meet the criteria set by the NTC
+and the DICT in registering as industry participants in order to construct, operate, lease or own
+networks or facilities except if it owns and operates an international cable landing station: Provided,
+That an owner or operator of a cable landing station, not considered a public utility, shall no longer
+be required to secure a CPCN. All industry participants intending to be spectrum holders shall need
+to secure a permit from the NTC and shall be allocated such spectrum in accordance with the
+provisions under Section 7 of this Act.
+(a) Implement an efficient and speedy administrative process in the authorization and
+(b) Adopt a technology-neutral framework that allows data transmission industry participants
+(c) Promote fair and open competition in accordance with the principles and policies under
+the Philippine Competition Act and its implementing rules in all segments of the data transmission
+network, allowing a wide variety of physical networks and applications to interact in an open
+(c) Data transmission industry participants shall likewise be required to comply with national
+and global best practices and standards on cybersecurity and shall be subject to a network audit by the
+Cybersecurity Bureau of the DICT. Data transmission industry participants shall, after three (3) years
+of operation, be required to secure a cybersecurity certification from a third-party organization based
+on the prevailing International Organization for Standardization (ISO) standards on information
+security management.
+SEC. 6. Open Access Approach to Regulation of the Data Transmission Industry. - The
+NTC shall ensure that the data transmission sector remains open and accessible to all qualified

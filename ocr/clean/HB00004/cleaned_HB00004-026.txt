@@ -1,0 +1,25 @@
+SEC. 24. Damages. - The online merchant is liable for damages to the consumer due
+to the lack of conformity with the contract of the goods. The consumer may claim damages within
+two (2) years from the relevant time of establishing conformity.
+The consumer shall pay for a decrease in the value of the goods only to the extent
+that the decrease in value exceeds depreciation through regular use. The payment
+for decrease in value shall not exceed the price paid for the goods.
+No damages may be recovered by virtue of this Act after the lapse of four (4) years from
+the time the conformity has been established.
+resolution (ODR) platform which is a single point of entry for consumers, online merchants, and
+eCommerce platform operators seeking out-of-court resolution of disputes.
+eCommerce platform operator does not have an internal dispute resolution mechanism, all
+complaints through an ODR against an eCommerce platform operator shall be accompanied by
+proof that internal dispute resolutions were exhausted.
+The ODR shall be an interactive website which may be accessed electronically and
+free of charge. The DTI, through the Bureau, shall be responsible for its operation,
+including its maintenance, funding and data security. The ODR platform must be
+user-friendly and must adopt the twin principles of "privacy by design" and "design
+for all", where the privacy of its users is respected, and the ODR platform is
+accessible and usable by all users.
+The DTI shall establish a network of ODR contact points from, among others,
+the agencies involved in consumer complaints specified in Republic Act No. 7394,
+otherwise known as the "Consumer Act of the Philippines," which includes the
+Agriculture (DA), the Department of Tourism (DOT), and the Department of
+Health (DOH). The NPC and the Intellectual Property Office of the Philippines
+(IPOPHIL) shall also form part of the ODR network.

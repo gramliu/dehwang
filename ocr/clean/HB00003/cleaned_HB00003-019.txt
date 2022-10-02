@@ -1,0 +1,19 @@
+b. Determining the levels of information security appropriate to protect such information
+c. Periodically testing and evaluating information security controls and techniques to ensure
+d. Complying with the requirements of pertinent laws on information security and privacy,
+related policies, procedures, standards, and guidelines, including information security
+standards promulgated by the Department of Information and Communications
+Technology; and information security standards and guidelines for national security
+systems issued in accordance with law and as directed by the President; and
+e. Ensuring that information security management processes are integrated with agency
+strategic and operational planning processes.
+SEC. 42. Government Cooperation with the Private Sector Nothing in this Act
+shall prevent the government, both national and local, from entering into contracts, agreements,
+or partnerships with the private sector to provide various resources, assets, and services in order
+to comply or enhance compliance with the provisions of this Act.
+Any and all contracts or agreements with the private sector in the context of this Act
+shall be subject to the laws and rules on public accountability and transparency and good
+governance.
+purpose of ensuring proper and efficient operations and management of the ICT assets of the
+DICT, and a faster implementation of infrastructure programs related to connectivity, data
+center and cloud infrastructure, there is hereby established a body corporate to be known as

@@ -1,0 +1,36 @@
+first and give the former sufficient time to rectify the situation; and (3) it is necessary to block the
+transmission of unwanted communications such as spam and child pornographic materials upon the
+complaint of the end user or the data transmission industry participant;
+(d) Refusal to Give Information. - It shall be prohibited for any data transmission industry
+participant, including PTEs with regard to its network and facilities, to refuse or fail to make available
+to suppliers of data transmission services, on a timely basis, the technical information about its
+essential facilities or network facilities and commercially relevant information that are necessary for
+(e) Anti-competitive Cross-subsidization. - The NTC shall require separate books of accounts
+between different data transmission segments in order to allow identification of costs and revenues
+for each segment. Any violation of this provision shall give rise to a presumption of anti-competitive
+cross-subsidization, which shall then be referred to the Philippine Competition Commission for
+proper determination and action, in accordance with the provisions of Republic Act No. 10667.
+Nothing herein shall prevent interconnecting networks from charging the appropriate cost-based
+compensation for the use of interconnection facilities.
+SEC. 14. Administrative Penalties. - The NTC shall require data transmission industry
+participants and PTEs providing data transmission services to comply with prescribed performance
+standards and shall impose penalties for failure to comply with such performance standards.
+(a) Any data transmission industry participant who fails to comply with the minimum service
+standards set by the NTC shall be imposed a minimum penalty of a fine of not less than One hundred
+thousand l pesos (P100,000.00) but not more than Five million pesos (P5,000,000.00) per day for every
+day during which such default or violation continues, until the participant fully complies: Provided, That
+if the data transmission industry participant has a gross annual income not exceeding Ten million
+pesos (P10,000,000.00), the penalty that may be imposed shall be equivalent to one percent (1%) to
+two percent (2%) of its gross annual income. The NTC is hereby authorized and empowered to
+impose such fine, after due notice and hearing.
+(b) An entity who fails to substantially comply with the NTC's performance standards for three
+(3) consecutive years shall, subject to due process, be removed from the registry of registered data
+transmission industry participants and shall be prohibited from rendering data transmission services.
+(c) Any data transmission industry participant who engages in the prohibited acts under Section
+12 of this Act or fails to comply with the performance standards set by the NTC shall suffer a
+minimum penalty of a fine of not less than Three hundred thousand pesos (P300,000.00) but not more
+than Five million pesos (P5,000,000.00) for every day that the violation continues until the participant
+fully complies: Provided, That if the data transmission industry participant has a gross annual income
+not exceeding Ten million pesos (P10,000,000.00), the penalty that may be imposed shall be equivalent
+36 to one percent (1%) to two percent (2%) of its gross annual income. In cases of anti-competitive
+37 cross-subsidization, the imposable penalties are those provided under Republic Act No. 10667.

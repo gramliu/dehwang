@@ -1,0 +1,26 @@
+SEC. 14. Internal Email Network. The government shall establish and maintain an
+internal email and communications network, to be known as "GovMail," for internal and intra-
+3 government communications, information dissemination and sharing, coordination, feedback,
+and other similar and related purposes. It shall be structured in a manner that ensures that the
+use and operation of such email network shall be accessible, safe, interactive, interconnected, and
+interoperable.
+SEC. 15. Migration, Digitization, and Automation of Paper-Based Workflows.
+All paper-based government and bureaucratic workflows involving internal communications,
+10 information dissemination and sharing, coordination, feedback, and other similar and related
+purposes shall be migrated, digitized, and, as far as practicable, automated.
+Notwithstanding the provisions of this Act, communication, information dissemination
+and sharing, coordination, and feedback which deals with critical and sensitive information as
+may be determined by the head of the agency shall be allowed to be conducted through
+traditional and non-digital means as may be deemed appropriate for the purpose by the head of
+the agency.
+SEC. 16. The Philippine Individual Information Database and Civil Registration
+System. The government shall establish, maintain, and support an individual information
+database which shall act as a national repository and directory of information and data on
+citizens of the Philippines, whether residing in the Philippines or not, and foreign nationals who
+enters the Philippines through legal channels.
+Information and data to be stored on the database shall include names, addresses,
+whether permanent or temporary, national identification numbers, dates and places of birth,
+citizenship, civil status, biometric data and information, and other associated information:
+provided, that the acquisition and storage of data and information on the database shall not in any
+way violate any applicable domestic and international laws and rules on privacy of data and
+information.

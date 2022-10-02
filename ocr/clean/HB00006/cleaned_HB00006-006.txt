@@ -1,0 +1,30 @@
+trading within and between each data transmission segment so as to allow clear, comparative
+(e) Mandate interconnection so that data transmission industry participants can connect to
+each other at the various segments and interfaces, such that entities of any size may freely enter and
+exit the market, and dominance by any single player or group of players is avoided;
+(f) Promulgate policies that will encourage distributed local solutions rather than centralized
+(g) Publish the list of registered data transmission industry participants at least once a year;
+(h) Promulgate, together with the PCC, rules defining and regulating entities with substantial
+Publish a Spectrum Management Framework to be developed together with the DICT and
+(1) Collect the necessary Supervision and Regulation Fee (SRF) and Spectrum User Fee (SUF),
+and other relevant fees as provided by law.
+SEC. 7. Spectrum Allocation, Recall, and Reallocation. The NTC shall maximize the
+allocation and assignment of finite radio spectrum resources used in the transmission of data by
+ensuring that the spectrum is made available for the use of all registered data transmission industry
+(a) The procedure for radio spectrum assignment, joint use and recall shall be made transparent
+to the public. All applications, including letter requests, spectrum assignment, joint use, recall, and
+reallocation shall be posted in the NTC website and in a conspicuous place in the offices of the NTC
+for at least three (3) consecutive months. The notice shall specifically indicate the names of the
+applicants for spectrum assignment, joint use and recall, including where the NTC itself is the
+proponent of any such action, the affected spectrum, and the applicant's or NTC's reasons for the
+proposed spectrum assignment, joint use and recall. The NTC shall not assign, recall or allow co-use
+or joint use of any radio frequency band or bands without conducting at least one (1) public hearing
+and allowing public comment for a period of fifteen (15) days from the date of the public hearing,
+prior to approval and/or disapproval of the same. This shall apply to all spectrum, whether used for
+(b) All radio spectrums, radio frequency assignments, recalls, and joint use decisions of the
+NTC shall be published in the NTC website and in a conspicuous place in the offices of the NTC for
+at least three (3) consecutive months. The recall of frequency for purposes of free public use shall be
+given priority.
+The immediately preceding paragraphs (a) and (b) herein shall not apply to applications for
+frequency assignments for fixed point-to-point radio links, wifi, and satellite networks;
+(c) The NTC shall avoid the concentration of spectrum resources in the hands of a few players

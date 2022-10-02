@@ -6,7 +6,8 @@ export default async function processOcr() {
   const client = new ImageAnnotatorClient();
 
   const bills = readdirSync("images");
-  for (const bill of bills) {
+  for (let i = 1; i < 10; i++) {
+    const bill = bills[i];
     const files = readdirSync(`images/${bill}`);
     const dir = `text/${bill}`;
     if (!existsSync(dir)) {
@@ -22,6 +23,5 @@ export default async function processOcr() {
       const text = result.fullTextAnnotation.text;
       writeFileSync(`text/${bill}/${fileName}.txt`, text);
     }
-    break;
   }
 }

@@ -1,0 +1,25 @@
+1 maintain a ROB which shall provide consumers access to data and information of registered online
+2 business entities for purposes of verifying the validity, existence of and other relevant information
+pertaining to business entities.
+The DICT, in consultation with the DTI, the National Privacy Commission (NPC), the
+Philippine Competition Commission (PCC) and other concerned agencies, shall issue the rules and
+regulations to govern the development, management, operation, and maintenance of the ROB.
+Industry, upon due notice and hearing regarding violations of this Act, the Consumer Act of the
+Philippines, or any other related trade or consumer laws, operating to the grave and irreparable
+prejudice of a consumer or a rights holder, shall have the power to issue an order directing that a
+website, webpage, online application, social media account, or other similar platform, be taken
+down, made inaccessible in the Philippines, or that no entity shall process any payment to any of
+those entities, or otherwise be rendered commercially inoperative, in order to abate any further
+violations.
+The said provisional take down order shall be directed against the owner or operator of
+the website, webpage, online application, social media account, as well as duly registered internet
+service provider, as well as payment gateways or channels. Copies of the order shall likewise be
+served on other government agencies whose cooperation would be required for the enforcement
+of the same.
+The order shall remain in effect for a maximum period of thirty (30) days unless otherwise
+extended or made permanent by a judicial order or decision.
+SEC. 13. Cease and Desist Order. The Secretary of Trade and Industry, upon due
+notice and hearing, shall have the power to issue an order directing a website, webpage, online
+application, social media account, or other similar platform operating to the grave and irreparable
+prejudice of a consumer or a rights holder, to desist from marketing or offering goods or services
+that are accessible in the Philippines, and directing that no payments shall be made to any entity
