@@ -34,3 +34,23 @@ export const getPolitician = async (
     }
   }
 };
+
+export const addPolitician = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  const body = req.body;
+
+  try {
+    const politician = new Politician(body);
+    const politicianObject = await politician.save();
+    res.json({ politicianObject });
+  } catch (err) {
+    if (err.name === "CastError" || err.name === "ValidationError") {
+      return bad(res);
+    } else {
+      console.error(err);
+      return error(res);
+    }
+  }
+};
