@@ -1,7 +1,16 @@
 import express from "express";
 import router from "./routes";
+import dotenv from "dotenv";
+import mongoose from "mongoose";
 
-const PORT = 3000;
+dotenv.config();
+
+const PORT = process.env.PORT || 3000;
+
+const MONGODB_URI = process.env.MONGODB_URI;
+mongoose.connect(MONGODB_URI, {
+  autoIndex: true,
+});
 
 const app = express();
 app.use("/", router);
