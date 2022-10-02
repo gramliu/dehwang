@@ -10,7 +10,6 @@ export default async function uploadFiles() {
 
   const bills = readdirSync("images");
   for (const bill of bills) {
-    console.log(bill);
     const files = readdirSync(`images/${bill}`);
     for (const file of files) {
       writeFile(bucket, bill, file);

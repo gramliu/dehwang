@@ -1,0 +1,39 @@
+import { ImageAnnotatorClient } from "@google-cloud/vision";
+import { existsSync, mkdirSync, readdirSync, writeFileSync } from "fs";
+
+// Use Google Cloud Vision API to perform OCR on images
+export default async function processOcr() {
+  const client = new ImageAnnotatorClient();
+
+  const bills = readdirSync("images");
+  for (const bill of bills) {
+    const files = readdirSync(`images/${bill}`);
+    const dir = `text/${bill}`;
+    if (!existsSync(dir)) {
+      mkdirSync(dir);
+    }
+
+    for (const file of files) {
+      console.log(file);
+      const [fileName] = file.split(".");
+      const [result] = await client.documentTextDetection(
+        `./images/${bill}/${file}`
+      );
+      const text = result.fullTextAnnotation.text;
+      writeFileSync(`text/${bill}/${fileName}.txt`, text);
+
+      const pageDir = `text/${bill}/${fileName}`;
+      if (!existsSync(pageDir)) {
+        mkdirSync(pageDir);
+      }
+      const pages = result.fullTextAnnotation.pages;
+      for (const page of pages) {
+        for (const block of page.blocks) {
+          block.paragraphs.forEach(paragraph => paragraph.words.forEach(word => word.))
+        }
+      }
+      break;
+    }
+    break;
+  }
+}

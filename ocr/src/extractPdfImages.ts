@@ -5,7 +5,7 @@ import { existsSync, mkdirSync, readdirSync } from "fs";
 export default async function extractPdfImages() {
   const pdfs = readdirSync("pdfs");
   for (const pdf of pdfs) {
-    const fileName = pdf.split(".")[0];
+    const [fileName] = pdf.split(".");
     const dir = `images/${fileName}`;
     if (!existsSync(dir)) {
       mkdirSync(dir);
