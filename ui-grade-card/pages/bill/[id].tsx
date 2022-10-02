@@ -1,88 +1,44 @@
-import { Chip, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import type { NextPage } from "next";
-import Image from "next/future/image";
-import { useRouter } from "next/router";
 import BaseLayout from "../../components/BaseLayout";
-import BillRow from "../../components/BillRow";
+import { Bill, toTitleCase } from "../../components/BillRow";
+import ChipContainer from "../../components/ChipContainer";
 import Header from "../../components/Header";
-import { Politician } from "../../components/PoliticianRow";
-import styles from "../../styles/Politician.module.scss";
+import styles from "../../styles/Bill.module.scss";
 
-const politician: Politician = {
-  name: "Hon. Abante, Bienvenido Jr. M.",
-  photoUrl:
-    "https://hrep-website.s3.ap-southeast-1.amazonaws.com/members/19th/abante.jpg",
-  role: "District Representative",
-  location: "Manila, 6th District",
-  stances: ["human rights", "local government", "education"],
-  billsAuthored: 3,
+const bill: Bill = {
+  id: "",
+  billNum: "HB00001",
+  title:
+    "AN ACT PROVIDING FOR GOVERNMENT FINANCIAL INSTITUTIONS UNIFIED INITIATIVES TO DISTRESSED ENTERPRISES FOR ECONOMIC RECOVERY (GUIDE)",
+  dateFiled: "2022-06-30",
+  significance: "National",
+  stances: ["economy recovery", "MSMEs"],
 };
 
-const bills = [
-  {
-    id: "",
-    billNum: "HB00001",
-    title:
-      "AN ACT PROVIDING FOR GOVERNMENT FINANCIAL INSTITUTIONS UNIFIED INITIATIVES TO DISTRESSED ENTERPRISES FOR ECONOMIC RECOVERY (GUIDE)",
-    dateFiled: "2022-06-30",
-    significance: "National",
-    stances: ["economy recovery", "MSMEs"],
-  },
-  {
-    id: "",
-    billNum: "HB00002",
-    title:
-      "AN ACT PROVIDING FOR GOVERNMENT FINANCIAL INSTITUTIONS UNIFIED INITIATIVES TO DISTRESSED ENTERPRISES FOR ECONOMIC RECOVERY (GUIDE)",
-    dateFiled: "2022-06-30",
-    significance: "National",
-    stances: ["economy recovery", "MSMEs"],
-  },
-];
-
-const Stance: NextPage = () => {
-  const router = useRouter();
-  const { id } = router.query;
-
-  const { name, photoUrl, role, location, stances, billsAuthored } = politician;
+const BillPage: NextPage = () => {
+  const { id, billNum, title, dateFiled, significance, stances } = bill;
 
   return (
     <BaseLayout>
       <Header />
       <div className={styles.container}>
         <div className={styles.profile}>
-          <Image src={photoUrl} height={210} width={150} alt={name} />
-          <br />
           <Typography variant="h4" fontWeight="bold">
-            {name}
+            {billNum}
           </Typography>
-          <Typography variant="subtitle1">{role}</Typography>
-          <Typography variant="subtitle1">{location}</Typography>
-          {billsAuthored ? (
-            <Typography variant="subtitle1" fontWeight="bold">
-              {billsAuthored} bills authored
-            </Typography>
-          ) : null}
-          <div className={styles.stances}>
-            {stances.map((stance) => (
-              <Chip key={stance} variant="outlined" label={stance} clickable />
-            ))}
+          <div className={styles.titleWrapper}>
+            <Typography variant="h5">{toTitleCase(title)}</Typography>
           </div>
-        </div>
-        <Typography
-          variant="h3"
-          fontWeight="bold"
-          className={styles.sectionHeader}
-        >
-          Bills
-        </Typography>
-        <div className={styles.bills}>
-          {bills.map((bill, idx) => (
-            <BillRow bill={bill} key={idx} className={styles.bill} />
-          ))}
+          <Typography variant="subtitle1">Filed: {dateFiled}</Typography>
+          <Typography variant="subtitle1" fontWeight="bold">
+            {significance}
+          </Typography>
+          <ChipContainer chips={stances} centered />
         </div>
       </div>
     </BaseLayout>
   );
 };
 
-export default Stance;
+export default BillPage;

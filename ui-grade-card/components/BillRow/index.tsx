@@ -26,7 +26,7 @@ interface ConditionalWrapperProps {
   children: ReactNode;
 }
 
-function toTitleCase(str: string) {
+export function toTitleCase(str: string) {
   return str.replace(/\w\S*/g, function (txt: string) {
     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
   });
@@ -70,7 +70,9 @@ export default function BillRow({
         </Typography>
         <Typography variant="h6">{toTitleCase(title)}</Typography>
         <Typography variant="subtitle1">Filed: {dateFiled}</Typography>
-        <Typography variant="subtitle1">{significance}</Typography>
+        <Typography variant="subtitle1" fontWeight="bold">
+          {significance}
+        </Typography>
       </div>
       <ChipContainer chips={stances} />
     </ConditionalWrapper>

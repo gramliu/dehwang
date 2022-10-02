@@ -40,7 +40,7 @@ const bills = [
   },
 ];
 
-const Stance: NextPage = () => {
+const PoliticianPage: NextPage = () => {
   const router = useRouter();
   const { id } = router.query;
 
@@ -82,4 +82,4 @@ const Stance: NextPage = () => {
   );
 };
 
-export default Stance;
+export default PoliticianPage;
