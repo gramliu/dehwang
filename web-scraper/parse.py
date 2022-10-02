@@ -1,4 +1,7 @@
+import os
 from bs4 import BeautifulSoup
+import requests
+
 
 def parse_bill(data):
 
@@ -24,9 +27,10 @@ def parse_bill(data):
 
     authors1 = []
 
-    for i in range(0,len(split),2):
+    for i in range(0, len(split), 2):
         split[i] = split[i].strip('\n').strip()
-        authors1.insert(-1, split[i].strip('\n').strip() + ", " + split[i+1].strip('\n').strip())
+        authors1.insert(-1, split[i].strip('\n').strip() +
+                        ", " + split[i+1].strip('\n').strip())
 
     dateFiled = tds[4].string
 
@@ -38,17 +42,42 @@ def parse_bill(data):
     for i in range(7, len(tds)-2):
         authors2.insert(-1, tds[i].string.split(' ')[1])
 
-    final_dict = {"billNum":billNum,
-                "title":title,
-                "abstract":abstract,
-                "principal_authors":authors1,
-                "dateField":dateFiled.split(":")[1].strip(),
-                "significance":significance.split(":")[1].strip(),
-                "co-authors":authors2}
+    final_dict = {"billNum": billNum,
+                  "title": title,
+                  "abstract": abstract,
+                  "principal_authors": authors1,
+                  "dateField": dateFiled.split(":")[1].strip(),
+                  "significance": significance.split(":")[1].strip(),
+                  "co-authors": authors2}
 
     return final_dict
 
-html_file = open('sample.txt', 'r')
-data = html_file.read()
-html_file.close()
-print(parse_bill(data))
+
+BASE_URL = "http://localhost:3000"
+
+
+def main():
+    politicians = requests.get(BASE_URL + "/politician").json()
+    mapping = {}
+    # Build last name to id mapping
+    for politician in politicians:
+        name = politician["name"]
+        id = politician["_id"]
+        lastName = name.split(",")[0].lower()
+        mapping[lastName] = id
+
+    for i in range(1, 21):
+        with open(f"data/HB{str(i).zfill(5)}.html", "r") as file:
+            html = file.read()
+            data = parse_bill(html)
+            print(data)
+        break
+
+
+if __name__ == "__main__":
+    main()
+
+# html_file = open('sample.txt', 'r')
+# data = html_file.read()
+# html_file.close()
+# print(parse_bill(data))
