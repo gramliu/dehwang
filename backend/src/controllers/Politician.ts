@@ -47,6 +47,7 @@ export const addPolitician = async (
     res.json({ politicianObject });
   } catch (err) {
     if (err.name === "CastError" || err.name === "ValidationError") {
+      console.error(err);
       return bad(res);
     } else {
       console.error(err);
