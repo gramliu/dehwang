@@ -1,7 +1,7 @@
-import { Chip, Typography } from "@mui/material";
+import { Card, Chip, Typography } from "@mui/material";
 import clsx from "clsx";
 import Image from "next/future/image";
-import { ReactElement } from "react";
+import { ReactElement, ReactNode } from "react";
 import ChipContainer from "../ChipContainer";
 import styles from "./index.module.scss";
 
@@ -17,6 +17,13 @@ export interface Bill {
 interface BillRowProps {
   bill: Bill;
   className?: string;
+  useCard?: boolean;
+}
+
+interface ConditionalWrapperProps {
+  className?: string;
+  useCard?: boolean;
+  children: ReactNode;
 }
 
 function toTitleCase(str: string) {
@@ -25,16 +32,37 @@ function toTitleCase(str: string) {
   });
 }
 
+export function ConditionalWrapper({
+  useCard,
+  children,
+  className,
+}: ConditionalWrapperProps): ReactElement {
+  if (useCard) {
+    return <Card className={className}>{children}</Card>;
+  } else {
+    return <div className={className}>{children}</div>;
+  }
+}
+
 export default function BillRow({
   bill,
   className,
+  useCard = true,
 }: BillRowProps): ReactElement {
   const { id, billNum, title, dateFiled, significance, stances } = bill;
 
   return (
-    <div className={clsx(styles.billRow, className)}>
+    <ConditionalWrapper
+      className={clsx(styles.billRow, className)}
+      useCard={useCard}
+    >
       <div className={styles.photo}>
-        <Image src="/document.png" width={64} height={64} alt="Document icon" />
+        <Image
+          src="/document.png"
+          width={100}
+          height={100}
+          alt="Document icon"
+        />
       </div>
       <div className={styles.description}>
         <Typography variant="h5" className={styles.billNum}>
@@ -45,6 +73,6 @@ export default function BillRow({
         <Typography variant="subtitle1">{significance}</Typography>
       </div>
       <ChipContainer chips={stances} />
-    </div>
+    </ConditionalWrapper>
   );
 }

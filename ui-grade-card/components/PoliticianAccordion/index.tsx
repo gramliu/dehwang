@@ -24,12 +24,17 @@ export default function PoliticianAccordion({
   return (
     <Accordion>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-        <PoliticianRow politician={politician} />
+        <PoliticianRow politician={politician} useCard={false} />
       </AccordionSummary>
       <AccordionDetails>
         <div className={styles.bills}>
           {bills.map((bill, idx) => (
-            <BillRow key={idx} bill={bill} className={styles.bill} />
+            <BillRow
+              key={idx}
+              bill={bill}
+              className={styles.bill}
+              useCard={false}
+            />
           ))}
         </div>
       </AccordionDetails>

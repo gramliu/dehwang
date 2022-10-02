@@ -63,7 +63,7 @@ const Stance: NextPage = () => {
               {billsAuthored} bills authored
             </Typography>
           ) : null}
-          <ChipContainer chips={stances} />
+          <ChipContainer chips={stances} centered />
         </div>
         <Typography
           variant="h3"
