@@ -8,4 +8,5 @@ const Politician: Schema<IPolitican> = new Schema({
   picUrl: { type: String },
 });
 
+Politician.index({ name: "text", role: "text", location: "text" });
 export default model<IPolitican>("Politician", Politician, "politicians");

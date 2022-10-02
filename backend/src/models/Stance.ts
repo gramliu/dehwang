@@ -6,4 +6,5 @@ const Stance: Schema<IStance> = new Schema({
   topic: { type: String },
 });
 
+Stance.index({ name: "text", topic: "text" });
 export default model<IStance>("Stance", Stance, "stances");
