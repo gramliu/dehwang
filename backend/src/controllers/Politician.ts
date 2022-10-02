@@ -11,7 +11,7 @@ export const getPolitician = async (
 
   try {
     const politician = await Politician.findById(id);
-    const bills = await BillAuthorship.find({ author: politician.id })
+    const bills = await BillAuthorship.find({ author: id })
       .populate("bill")
       .populate({
         path: "bill",
