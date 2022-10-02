@@ -639,6 +639,11 @@
   "resolved" "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
   "version" "0.0.29"
 
+"@types/luxon@^3.0.1":
+  "integrity" "sha512-/LAvk1cMOJt0ghzMFrZEvByUhsiEfeeT2IF53Le+Ki3A538yEL9pRZ7a6MuCxdrYK+YNqNIDmrKU/r2nnw04zQ=="
+  "resolved" "https://registry.npmjs.org/@types/luxon/-/luxon-3.0.1.tgz"
+  "version" "3.0.1"
+
 "@types/node@18.7.23":
   "integrity" "sha512-DWNcCHolDq0ZKGizjx2DZjR/PqsYwAcYUJmfMWqtVU2MBMG5Mo+xFZrhGId5r/O5HOuMPyQEcM6KUBp5lBZZBg=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-18.7.23.tgz"

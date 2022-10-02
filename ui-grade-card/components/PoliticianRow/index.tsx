@@ -3,7 +3,7 @@ import Image from "next/future/image";
 import Link from "next/link";
 import { ReactElement } from "react";
 import { ConditionalWrapper } from "../BillRow";
-import StancesContainer from "../ChipContainer";
+import StancesContainer, { Stance } from "../ChipContainer";
 import styles from "./index.module.scss";
 
 export interface Politician {
