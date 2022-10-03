@@ -18,13 +18,16 @@ const Stance: NextPage = ({ topAuthors, bills, stance }: any) => {
           {toTitleCase(stance.name)}
         </Typography>
         <div className={styles.politicians}>
-          {topAuthors.map((politician: Politician, idx: number) => (
-            <PoliticianAccordion
-              key={idx}
-              politician={politician}
-              bills={bills}
-            />
-          ))}
+          {topAuthors.map((politician: Politician, idx: number) => {
+            politician.billsAuthored = bills.length;
+            return (
+              <PoliticianAccordion
+                key={idx}
+                politician={politician}
+                bills={bills}
+              />
+            );
+          })}
         </div>
       </div>
     </BaseLayout>
